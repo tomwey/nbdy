@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Defines.h"
 
 @interface AppDelegate ()
 
@@ -17,12 +18,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSFontAttributeName : AWCustomFont(MAIN_TEXT_FONT, 0),
+                                                            NSForegroundColorAttributeName : MAIN_BLACK_COLOR }];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    UIViewController *homeVC = [[NSClassFromString(@"HomeVC") alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:homeVC];
+    self.window.rootViewController = nav;
+    
     [self.window makeKeyAndVisible];
     
+    NSLog(@"1234567");
+
     return YES;
 }
 

@@ -24,6 +24,16 @@
 	<true/>
 	<key>UIPrerenderedIcon</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>circular_light.otf</string>
+		<string>FZY1JW_0.TTF</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

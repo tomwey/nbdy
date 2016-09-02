@@ -115,6 +115,9 @@
 		97E305741D794F7E005C398A /* ModuleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E305731D794F7E005C398A /* ModuleService.m */; };
 		97E305771D795DA7005C398A /* ModuleGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E305761D795DA7005C398A /* ModuleGridView.m */; };
 		97E3057A1D795EE4005C398A /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E305791D795EE4005C398A /* GridView.m */; };
+		97E3057D1D79674B005C398A /* UserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E3057C1D79674B005C398A /* UserVC.m */; };
+		97E305801D796870005C398A /* WebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E3057F1D796870005C398A /* WebViewVC.m */; };
+		97E305831D796B6A005C398A /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E305821D796B6A005C398A /* LoadingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -288,6 +291,12 @@
 		97E305761D795DA7005C398A /* ModuleGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleGridView.m; sourceTree = "<group>"; };
 		97E305781D795EE4005C398A /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
 		97E305791D795EE4005C398A /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
+		97E3057B1D79674B005C398A /* UserVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserVC.h; sourceTree = "<group>"; };
+		97E3057C1D79674B005C398A /* UserVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserVC.m; sourceTree = "<group>"; };
+		97E3057E1D796870005C398A /* WebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewVC.h; sourceTree = "<group>"; };
+		97E3057F1D796870005C398A /* WebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewVC.m; sourceTree = "<group>"; };
+		97E305811D796B6A005C398A /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		97E305821D796B6A005C398A /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -369,6 +378,10 @@
 				97E304B51D7916F3005C398A /* BaseNavBarVC.m */,
 				97E304AE1D791668005C398A /* HomeVC.h */,
 				97E304AF1D791668005C398A /* HomeVC.m */,
+				97E3057B1D79674B005C398A /* UserVC.h */,
+				97E3057C1D79674B005C398A /* UserVC.m */,
+				97E3057E1D796870005C398A /* WebViewVC.h */,
+				97E3057F1D796870005C398A /* WebViewVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -453,6 +466,8 @@
 				97E305761D795DA7005C398A /* ModuleGridView.m */,
 				97E305781D795EE4005C398A /* GridView.h */,
 				97E305791D795EE4005C398A /* GridView.m */,
+				97E305811D796B6A005C398A /* LoadingView.h */,
+				97E305821D796B6A005C398A /* LoadingView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -830,6 +845,7 @@
 				97E304A11D790C89005C398A /* AWMultipleColumnTableViewDataSource.m in Sources */,
 				97E304571D790C47005C398A /* AFURLRequestSerialization.m in Sources */,
 				97E304991D790C89005C398A /* APIError.m in Sources */,
+				97E3057D1D79674B005C398A /* UserVC.m in Sources */,
 				97E304601D790C47005C398A /* UIImageView+AFNetworking.m in Sources */,
 				97E304A61D790C89005C398A /* UITableView+RemoveBlankCells.m in Sources */,
 				97E3049E1D790C89005C398A /* UIView+AWGeometry.m in Sources */,
@@ -843,6 +859,7 @@
 				97E304581D790C47005C398A /* AFURLResponseSerialization.m in Sources */,
 				97E304B01D791668005C398A /* HomeVC.m in Sources */,
 				97E3045F1D790C47005C398A /* UIButton+AFNetworking.m in Sources */,
+				97E305801D796870005C398A /* WebViewVC.m in Sources */,
 				97E3045D1D790C47005C398A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				97E304981D790C89005C398A /* APIEntityReformer.m in Sources */,
 				97E305771D795DA7005C398A /* ModuleGridView.m in Sources */,
@@ -874,6 +891,7 @@
 				97E304541D790C47005C398A /* AFNetworkReachabilityManager.m in Sources */,
 				97E3049F1D790C89005C398A /* AWRefreshBaseView.m in Sources */,
 				97E304B61D7916F3005C398A /* BaseNavBarVC.m in Sources */,
+				97E305831D796B6A005C398A /* LoadingView.m in Sources */,
 				97E3049D1D790C89005C398A /* CustomNavBar.m in Sources */,
 				97E303EE1D7904CC005C398A /* main.m in Sources */,
 			);

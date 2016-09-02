@@ -201,6 +201,11 @@
 {
     NSInteger index = gesture.view.tag;
     
+    Module *m = [[self.moduleService loadModules] objectAtIndex:index];
+    
+    WebViewVC *http = [[WebViewVC alloc] initWithTitle:@"标题" link:@"https://www.baidu.com"];
+    [self.navigationController pushViewController:http animated:YES];
+    
     NSLog(@"index: %d", index);
 }
 

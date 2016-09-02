@@ -42,4 +42,10 @@
 // services
 #import "ModuleService.h"
 
+// views
+#import "LoadingView.h"
+
+// controllers
+#import "WebViewVC.h"
+
 #endif /* Defines_h */

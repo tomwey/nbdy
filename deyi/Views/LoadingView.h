@@ -1,5 +1,5 @@
 //
-//  BaseVC.h
+//  LoadingView.h
 //  deyi
 //
 //  Created by tangwei1 on 16/9/2.
@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "LoadingView.h"
 
-@interface BaseVC : UIViewController
+typedef NS_ENUM(NSInteger, LoadingState) {
+    LoadingStateDefault,
+    LoadingStateLoading,
+    LoadingStateSuccessResult,
+    LoadingStateFail,
+    LoadingStateEmptyResult,
+};
 
-@property (nonatomic, strong, readonly) UIView *contentView;
+@interface LoadingView : UIView
 
 - (void)startLoading:(void (^)(void))reloadCallback;
 

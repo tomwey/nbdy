@@ -110,6 +110,11 @@
 		97E305681D792CDC005C398A /* loading_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E305351D792CDC005C398A /* loading_2.png */; };
 		97E305691D792CDC005C398A /* loading_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E305361D792CDC005C398A /* loading_3.png */; };
 		97E3056A1D792CDC005C398A /* loading_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E305371D792CDC005C398A /* loading_4.png */; };
+		97E3056E1D794B1C005C398A /* AWHairlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E3056D1D794B1C005C398A /* AWHairlineView.m */; };
+		97E305711D794E70005C398A /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E305701D794E70005C398A /* Module.m */; };
+		97E305741D794F7E005C398A /* ModuleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E305731D794F7E005C398A /* ModuleService.m */; };
+		97E305771D795DA7005C398A /* ModuleGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E305761D795DA7005C398A /* ModuleGridView.m */; };
+		97E3057A1D795EE4005C398A /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E305791D795EE4005C398A /* GridView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -273,6 +278,16 @@
 		97E305351D792CDC005C398A /* loading_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_2.png; sourceTree = "<group>"; };
 		97E305361D792CDC005C398A /* loading_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_3.png; sourceTree = "<group>"; };
 		97E305371D792CDC005C398A /* loading_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading_4.png; sourceTree = "<group>"; };
+		97E3056C1D794B1C005C398A /* AWHairlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWHairlineView.h; sourceTree = "<group>"; };
+		97E3056D1D794B1C005C398A /* AWHairlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWHairlineView.m; sourceTree = "<group>"; };
+		97E3056F1D794E70005C398A /* Module.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
+		97E305701D794E70005C398A /* Module.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
+		97E305721D794F7E005C398A /* ModuleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleService.h; sourceTree = "<group>"; };
+		97E305731D794F7E005C398A /* ModuleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleService.m; sourceTree = "<group>"; };
+		97E305751D795DA7005C398A /* ModuleGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleGridView.h; sourceTree = "<group>"; };
+		97E305761D795DA7005C398A /* ModuleGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleGridView.m; sourceTree = "<group>"; };
+		97E305781D795EE4005C398A /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
+		97E305791D795EE4005C398A /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +347,7 @@
 		97E304031D7905EF005C398A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				97E3056B1D794B06005C398A /* AWHairlineView */,
 				97E304F71D7925C0005C398A /* AWFoundationAdditions */,
 				97E304641D790C89005C398A /* AWAPIManager */,
 				97E304751D790C89005C398A /* AWCustomNavBar */,
@@ -360,6 +376,8 @@
 		97E304051D7905EF005C398A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				97E3056F1D794E70005C398A /* Module.h */,
+				97E305701D794E70005C398A /* Module.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -422,6 +440,8 @@
 		97E3040D1D7905EF005C398A /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				97E305721D794F7E005C398A /* ModuleService.h */,
+				97E305731D794F7E005C398A /* ModuleService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -429,6 +449,10 @@
 		97E3040E1D7905EF005C398A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				97E305751D795DA7005C398A /* ModuleGridView.h */,
+				97E305761D795DA7005C398A /* ModuleGridView.m */,
+				97E305781D795EE4005C398A /* GridView.h */,
+				97E305791D795EE4005C398A /* GridView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -668,6 +692,15 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		97E3056B1D794B06005C398A /* AWHairlineView */ = {
+			isa = PBXGroup;
+			children = (
+				97E3056C1D794B1C005C398A /* AWHairlineView.h */,
+				97E3056D1D794B1C005C398A /* AWHairlineView.m */,
+			);
+			path = AWHairlineView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -812,15 +845,20 @@
 				97E3045F1D790C47005C398A /* UIButton+AFNetworking.m in Sources */,
 				97E3045D1D790C47005C398A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				97E304981D790C89005C398A /* APIEntityReformer.m in Sources */,
+				97E305771D795DA7005C398A /* ModuleGridView.m in Sources */,
 				97E3049A1D790C89005C398A /* APIFileParam.m in Sources */,
+				97E305741D794F7E005C398A /* ModuleService.m in Sources */,
 				97E304B31D7916D8005C398A /* BaseVC.m in Sources */,
 				97E3045B1D790C47005C398A /* README.md in Sources */,
+				97E3057A1D795EE4005C398A /* GridView.m in Sources */,
 				97E3049C1D790C89005C398A /* APIRequest.m in Sources */,
 				97E304621D790C47005C398A /* UIRefreshControl+AFNetworking.m in Sources */,
 				97E304A81D790C89005C398A /* AWUIUtils.m in Sources */,
 				97E304971D790C89005C398A /* APIDictionaryReformer.m in Sources */,
+				97E305711D794E70005C398A /* Module.m in Sources */,
 				97E304A71D790C89005C398A /* UITableViewCell+RemoveBackground.m in Sources */,
 				97E304A51D790C89005C398A /* UITableView+LoadNetworkData.m in Sources */,
+				97E3056E1D794B1C005C398A /* AWHairlineView.m in Sources */,
 				97E304631D790C47005C398A /* UIWebView+AFNetworking.m in Sources */,
 				97E304A31D790C89005C398A /* UITableView+CompatibilityHandle.m in Sources */,
 				97E304A01D790C89005C398A /* UIScrollView+AWRefresh.m in Sources */,

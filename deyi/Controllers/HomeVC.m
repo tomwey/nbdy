@@ -20,6 +20,8 @@
 @property (nonatomic, strong, readonly) UILabel *totalEarnLabel;
 @property (nonatomic, strong, readonly) UILabel *balanceLabel;
 
+@property (nonatomic, strong) ModuleService *moduleService;
+
 @end
 
 #define kSectionMargin 10
@@ -129,7 +131,60 @@
 
 - (void)initModuleSection
 {
+    NSArray *modules = [self.moduleService loadModules];
+    NSInteger numberOfCols = self.contentView.width > 320 ? 4 : 3;
+    CGFloat width = ceilf(self.contentView.width / numberOfCols);
     
+    NSInteger numberOfRows = ( modules.count + numberOfCols - 1 ) / numberOfCols;
+//    CGFloat height = 0;
+    for (int i = 0; i < modules.count; i++) {
+        UIView *gridView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, width, width)];
+        gridView.backgroundColor = [UIColor whiteColor];
+        [self.sectionContainer addSubview:gridView];
+        gridView.clipsToBounds = YES;
+        
+        int m = i % numberOfCols;
+        int n = i / numberOfCols;
+        CGFloat dtx = m * width;
+        CGFloat dty = self.earningsSection.bottom + kSectionMargin + n * width;
+        
+        gridView.position = CGPointMake(dtx, dty);
+        
+        Module *module = [modules objectAtIndex:i];
+        
+        UIImageView *iconView = AWCreateImageView(module.icon);
+        iconView.frame = CGRectMake(0, 0, 32, 32);
+        [gridView addSubview:iconView];
+        iconView.center = CGPointMake(gridView.width / 2, 20 + iconView.height / 2);
+        
+        CGRect frame = CGRectMake(0, gridView.height - 10 - 37, gridView.width, 37);
+        UILabel *nameLabel = AWCreateLabel(frame, module.name,
+                                           NSTextAlignmentCenter,
+                                           AWCustomFont(MAIN_TEXT_FONT, 16),
+                                           MAIN_BLACK_COLOR);
+        [gridView addSubview:nameLabel];
+        
+        gridView.tag = i;
+        
+        [gridView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(gridDidTap:)]];
+        
+        if ( i == modules.count - 1 ) {
+            self.sectionContainer.contentSize = CGSizeMake(self.contentView.width, gridView.bottom);
+        }
+        
+        if ( m != numberOfCols - 1 ) {
+            AWHairlineView *rightLine = [[AWHairlineView alloc] initWithLineColor:HOME_HAIRLINE_COLOR];
+            rightLine.frame = CGRectMake(gridView.width - 1, -1, 1, gridView.height + 1);
+            [gridView addSubview:rightLine];
+        }
+        
+        if ( n != numberOfRows - 1 ) {
+            AWHairlineView *bottomLine = [[AWHairlineView alloc] initWithLineColor:HOME_HAIRLINE_COLOR];
+            bottomLine.frame = CGRectMake( -1, gridView.height - 1, gridView.width + 1, 1);
+            [gridView addSubview:bottomLine];
+        }
+        
+    }
 }
 
 - (void)connectWIFI
@@ -140,6 +195,21 @@
 - (void)gotoSettings
 {
     
+}
+
+- (void)gridDidTap:(UIGestureRecognizer *)gesture
+{
+    NSInteger index = gesture.view.tag;
+    
+    NSLog(@"index: %d", index);
+}
+
+- (ModuleService *)moduleService
+{
+    if ( !_moduleService ) {
+        _moduleService = [[ModuleService alloc] init];
+    }
+    return _moduleService;
 }
 
 - (UILabel *)todayEarnLabel

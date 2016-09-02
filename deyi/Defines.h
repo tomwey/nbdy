@@ -19,6 +19,8 @@
 
 #import "AWTableView.h"
 
+#import "AWHairlineView.h"
+
 #import "AWAPIManager.h"
 
 #import "NSStringAdditions.h"
@@ -26,10 +28,18 @@
 #define MAIN_TEXT_FONT      @"FZY1JW--GB1-0"
 #define MAIN_DIGIT_FONT     @"CircularAirPro-Light"
 
-#define MAIN_BG_COLOR         AWColorFromRGB(240, 240, 242)
+#define MAIN_BG_COLOR         AWColorFromRGB(239, 239, 244)
 #define MAIN_RED_COLOR        AWColorFromRGB(220, 0,   27)
 #define MAIN_BLACK_COLOR      AWColorFromRGB(0,   0,   0)
 #define SETTINGS_GRAY_COLOR   AWColorFromRGB(161, 161, 161)
 #define HOME_WIFI_CLOSE_COLOR AWColorFromRGB(151, 151, 151)
+
+#define HOME_HAIRLINE_COLOR   MAIN_BG_COLOR//AWColorFromRGB(240, 240, 242)
+
+// models
+#import "Module.h"
+
+// services
+#import "ModuleService.h"
 
 #endif /* Defines_h */

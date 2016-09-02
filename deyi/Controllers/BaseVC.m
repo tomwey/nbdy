@@ -18,4 +18,9 @@
     self.view.backgroundColor = MAIN_BG_COLOR;
 }
 
+- (UIView *)contentView
+{
+    return self.view;
+}
+
 @end

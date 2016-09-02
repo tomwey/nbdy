@@ -126,6 +126,24 @@ NSString* AWAppVersion()
     return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
 }
 
+UIImage *AWImageFromColor(UIColor *imageColor)
+{
+    CGRect rect = CGRectMake(0, 0, 1, 1);
+    UIGraphicsBeginImageContext(rect.size);
+    
+    CGContextRef ctx = UIGraphicsGetCurrentContext();
+    
+    imageColor = imageColor ?: [UIColor blackColor];
+    CGContextSetFillColorWithColor(ctx, imageColor.CGColor);
+    CGContextFillRect(ctx, rect);
+    
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return image;
+}
+
 UIFont* AWSystemFontWithSize(CGFloat fontSize, BOOL isBold)
 {
     if ( isBold ) {

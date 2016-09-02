@@ -10,4 +10,6 @@
 
 @interface BaseVC : UIViewController
 
+@property (nonatomic, strong, readonly) UIView *contentView;
+
 @end

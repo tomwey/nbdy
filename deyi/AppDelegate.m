@@ -22,6 +22,8 @@
     
     [[UINavigationBar appearance] setTitleTextAttributes:@{ NSFontAttributeName : AWCustomFont(MAIN_TEXT_FONT, 0),
                                                             NSForegroundColorAttributeName : MAIN_BLACK_COLOR }];
+    [[UINavigationBar appearance] setBackgroundImage:AWImageFromColor([UIColor whiteColor])
+                                       forBarMetrics:UIBarMetricsDefault];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     

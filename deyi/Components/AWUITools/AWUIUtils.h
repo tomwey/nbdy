@@ -85,6 +85,11 @@ UIWindow* AWCreateAppWindow(UIColor* bgColor);
 NSString* AWAppVersion();
 
 /**
+ * 创建一个颜色图片
+ */
+UIImage *AWImageFromColor(UIColor *imageColor);
+
+/**
  * 获取系统字体
  * @param fontSize 字体大小
  * @param isBold 是否加粗

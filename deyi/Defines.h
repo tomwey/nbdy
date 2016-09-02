@@ -26,9 +26,10 @@
 #define MAIN_TEXT_FONT      @"FZY1JW--GB1-0"
 #define MAIN_DIGIT_FONT     @"CircularAirPro-Light"
 
-#define MAIN_BG_COLOR       AWColorFromRGB(242, 242, 246)
-#define MAIN_RED_COLOR      AWColorFromRGB(220, 0,   27)
-#define MAIN_BLACK_COLOR    AWColorFromRGB(0,   0,   0)
-#define SETTINGS_GRAY_COLOR AWColorFromRGB(161, 161, 161)
+#define MAIN_BG_COLOR         AWColorFromRGB(240, 240, 242)
+#define MAIN_RED_COLOR        AWColorFromRGB(220, 0,   27)
+#define MAIN_BLACK_COLOR      AWColorFromRGB(0,   0,   0)
+#define SETTINGS_GRAY_COLOR   AWColorFromRGB(161, 161, 161)
+#define HOME_WIFI_CLOSE_COLOR AWColorFromRGB(151, 151, 151)
 
 #endif /* Defines_h */

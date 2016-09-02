@@ -95,5 +95,15 @@
 - (CGPoint)centerInFrame { return self.center; }
 - (CGPoint)centerInBounds { return CGPointMake(self.width / 2, self.height / 2); }
 
+- (void)setCornerRadius:(CGFloat)cornerRadius
+{
+    self.layer.cornerRadius = cornerRadius;
+    self.clipsToBounds = YES;
+}
+
+- (CGFloat)cornerRadius
+{
+    return self.layer.cornerRadius;
+}
 
 @end

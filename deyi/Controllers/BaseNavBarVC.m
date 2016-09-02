@@ -17,6 +17,8 @@
 @property (nonatomic, copy, nullable) void (^leftItemCallback)(void);
 @property (nonatomic, copy, nullable) void (^rightItemCallback)(void);
 
+@property (nonatomic, strong) UIView *internalContentView;
+
 @end
 
 @implementation BaseNavBarVC
@@ -24,6 +26,46 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    // 添加默认的返回按钮
+    __weak typeof(self) me = self;
+    [self addLeftBarItemWithImage:@"btn_back.png" callback:^{
+        [me back];
+    }];
+}
+
+- (UIView *)contentView
+{
+    return self.internalContentView;
+}
+
+- (UIView *)internalContentView
+{
+    if ( !_internalContentView ) {
+        _internalContentView = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+        [self.view addSubview:_internalContentView];
+        [self.view sendSubviewToBack:_internalContentView];
+        UIImage *image = [[UINavigationBar appearance] backgroundImageForBarMetrics:UIBarMetricsDefault];
+        _internalContentView.top = !!image ? 0 : 64;
+        _internalContentView.height -= 64;
+    }
+    return _internalContentView;
+}
+
+- (void)back
+{
+    if ( self.navigationController ) {
+        if ( [[self.navigationController viewControllers] count] == 1 ) {
+            [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+        } else {
+            // > 1
+            [self.navigationController popViewControllerAnimated:YES];
+        }
+    } else {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 - (UIView *)addLeftBarItemWithImage:(NSString *)imageName  callback:(void (^)(void))callback

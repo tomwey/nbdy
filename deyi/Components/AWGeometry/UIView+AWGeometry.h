@@ -52,5 +52,7 @@
 /** 返回自己内部坐标系中的中心点 */
 @property (nonatomic, assign, readonly) CGPoint centerInBounds;
 
+/** 设置视图的圆角 */
+@property (nonatomic, assign) CGFloat cornerRadius;
 
 @end

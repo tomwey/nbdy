@@ -15,6 +15,8 @@
 
 #import "AWUITools.h"
 
+#import "AWTextField.h"
+
 #import "AWCustomNavBar.h"
 
 #import "AWTableView.h"
@@ -24,6 +26,8 @@
 #import "AWAPIManager.h"
 
 #import "NSStringAdditions.h"
+
+#import "AWMediator.h"
 
 #define MAIN_TEXT_FONT      @"FZY1JW--GB1-0"
 #define MAIN_DIGIT_FONT     @"CircularAirPro-Light"

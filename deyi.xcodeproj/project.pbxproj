@@ -115,9 +115,14 @@
 		97E305741D794F7E005C398A /* ModuleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E305731D794F7E005C398A /* ModuleService.m */; };
 		97E305771D795DA7005C398A /* ModuleGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E305761D795DA7005C398A /* ModuleGridView.m */; };
 		97E3057A1D795EE4005C398A /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E305791D795EE4005C398A /* GridView.m */; };
-		97E3057D1D79674B005C398A /* UserVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E3057C1D79674B005C398A /* UserVC.m */; };
 		97E305801D796870005C398A /* WebViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E3057F1D796870005C398A /* WebViewVC.m */; };
 		97E305831D796B6A005C398A /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E305821D796B6A005C398A /* LoadingView.m */; };
+		99BA40CD1D7AB82200CD3C24 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA40CC1D7AB82200CD3C24 /* LoginVC.m */; };
+		99BA40D11D7AC15900CD3C24 /* AWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA40D01D7AC15900CD3C24 /* AWTextField.m */; };
+		99BA40D41D7ACD6B00CD3C24 /* SignupVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA40D31D7ACD6B00CD3C24 /* SignupVC.m */; };
+		99BA40D71D7ACD9B00CD3C24 /* PasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA40D61D7ACD9B00CD3C24 /* PasswordVC.m */; };
+		99BA40DB1D7ACDC500CD3C24 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA40DA1D7ACDC500CD3C24 /* SettingsVC.m */; };
+		99BA40E31D7AD36B00CD3C24 /* AWMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA40E21D7AD36B00CD3C24 /* AWMediator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -291,12 +296,22 @@
 		97E305761D795DA7005C398A /* ModuleGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleGridView.m; sourceTree = "<group>"; };
 		97E305781D795EE4005C398A /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
 		97E305791D795EE4005C398A /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
-		97E3057B1D79674B005C398A /* UserVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserVC.h; sourceTree = "<group>"; };
-		97E3057C1D79674B005C398A /* UserVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserVC.m; sourceTree = "<group>"; };
 		97E3057E1D796870005C398A /* WebViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewVC.h; sourceTree = "<group>"; };
 		97E3057F1D796870005C398A /* WebViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewVC.m; sourceTree = "<group>"; };
 		97E305811D796B6A005C398A /* LoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
 		97E305821D796B6A005C398A /* LoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		99BA40CB1D7AB82200CD3C24 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		99BA40CC1D7AB82200CD3C24 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		99BA40CF1D7AC15900CD3C24 /* AWTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWTextField.h; sourceTree = "<group>"; };
+		99BA40D01D7AC15900CD3C24 /* AWTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWTextField.m; sourceTree = "<group>"; };
+		99BA40D21D7ACD6B00CD3C24 /* SignupVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupVC.h; sourceTree = "<group>"; };
+		99BA40D31D7ACD6B00CD3C24 /* SignupVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupVC.m; sourceTree = "<group>"; };
+		99BA40D51D7ACD9B00CD3C24 /* PasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordVC.h; sourceTree = "<group>"; };
+		99BA40D61D7ACD9B00CD3C24 /* PasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordVC.m; sourceTree = "<group>"; };
+		99BA40D91D7ACDC500CD3C24 /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		99BA40DA1D7ACDC500CD3C24 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
+		99BA40E11D7AD36B00CD3C24 /* AWMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWMediator.h; sourceTree = "<group>"; };
+		99BA40E21D7AD36B00CD3C24 /* AWMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWMediator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,6 +371,8 @@
 		97E304031D7905EF005C398A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				99BA40E01D7AD36B00CD3C24 /* AWMediator */,
+				99BA40CE1D7AC14400CD3C24 /* AWTextField */,
 				97E3056B1D794B06005C398A /* AWHairlineView */,
 				97E304F71D7925C0005C398A /* AWFoundationAdditions */,
 				97E304641D790C89005C398A /* AWAPIManager */,
@@ -372,14 +389,13 @@
 		97E304041D7905EF005C398A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				99BA40D81D7ACDA500CD3C24 /* User */,
 				97E304B11D7916D8005C398A /* BaseVC.h */,
 				97E304B21D7916D8005C398A /* BaseVC.m */,
 				97E304B41D7916F3005C398A /* BaseNavBarVC.h */,
 				97E304B51D7916F3005C398A /* BaseNavBarVC.m */,
 				97E304AE1D791668005C398A /* HomeVC.h */,
 				97E304AF1D791668005C398A /* HomeVC.m */,
-				97E3057B1D79674B005C398A /* UserVC.h */,
-				97E3057C1D79674B005C398A /* UserVC.m */,
 				97E3057E1D796870005C398A /* WebViewVC.h */,
 				97E3057F1D796870005C398A /* WebViewVC.m */,
 			);
@@ -716,6 +732,39 @@
 			path = AWHairlineView;
 			sourceTree = "<group>";
 		};
+		99BA40CE1D7AC14400CD3C24 /* AWTextField */ = {
+			isa = PBXGroup;
+			children = (
+				99BA40CF1D7AC15900CD3C24 /* AWTextField.h */,
+				99BA40D01D7AC15900CD3C24 /* AWTextField.m */,
+			);
+			path = AWTextField;
+			sourceTree = "<group>";
+		};
+		99BA40D81D7ACDA500CD3C24 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				99BA40CB1D7AB82200CD3C24 /* LoginVC.h */,
+				99BA40CC1D7AB82200CD3C24 /* LoginVC.m */,
+				99BA40D21D7ACD6B00CD3C24 /* SignupVC.h */,
+				99BA40D31D7ACD6B00CD3C24 /* SignupVC.m */,
+				99BA40D51D7ACD9B00CD3C24 /* PasswordVC.h */,
+				99BA40D61D7ACD9B00CD3C24 /* PasswordVC.m */,
+				99BA40D91D7ACDC500CD3C24 /* SettingsVC.h */,
+				99BA40DA1D7ACDC500CD3C24 /* SettingsVC.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		99BA40E01D7AD36B00CD3C24 /* AWMediator */ = {
+			isa = PBXGroup;
+			children = (
+				99BA40E11D7AD36B00CD3C24 /* AWMediator.h */,
+				99BA40E21D7AD36B00CD3C24 /* AWMediator.m */,
+			);
+			path = AWMediator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -845,8 +894,8 @@
 				97E304A11D790C89005C398A /* AWMultipleColumnTableViewDataSource.m in Sources */,
 				97E304571D790C47005C398A /* AFURLRequestSerialization.m in Sources */,
 				97E304991D790C89005C398A /* APIError.m in Sources */,
-				97E3057D1D79674B005C398A /* UserVC.m in Sources */,
 				97E304601D790C47005C398A /* UIImageView+AFNetworking.m in Sources */,
+				99BA40E31D7AD36B00CD3C24 /* AWMediator.m in Sources */,
 				97E304A61D790C89005C398A /* UITableView+RemoveBlankCells.m in Sources */,
 				97E3049E1D790C89005C398A /* UIView+AWGeometry.m in Sources */,
 				97E304A41D790C89005C398A /* UITableView+LoadEmptyOrErrorHandle.m in Sources */,
@@ -854,12 +903,16 @@
 				97E304551D790C47005C398A /* AFSecurityPolicy.m in Sources */,
 				97E304611D790C47005C398A /* UIProgressView+AFNetworking.m in Sources */,
 				97E304511D790C47005C398A /* AFHTTPRequestOperation.m in Sources */,
+				99BA40D41D7ACD6B00CD3C24 /* SignupVC.m in Sources */,
 				97E304591D790C47005C398A /* AFURLSessionManager.m in Sources */,
+				99BA40D11D7AC15900CD3C24 /* AWTextField.m in Sources */,
 				97E305001D7925C0005C398A /* NSDataAdditions.m in Sources */,
 				97E304581D790C47005C398A /* AFURLResponseSerialization.m in Sources */,
 				97E304B01D791668005C398A /* HomeVC.m in Sources */,
 				97E3045F1D790C47005C398A /* UIButton+AFNetworking.m in Sources */,
 				97E305801D796870005C398A /* WebViewVC.m in Sources */,
+				99BA40DB1D7ACDC500CD3C24 /* SettingsVC.m in Sources */,
+				99BA40CD1D7AB82200CD3C24 /* LoginVC.m in Sources */,
 				97E3045D1D790C47005C398A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				97E304981D790C89005C398A /* APIEntityReformer.m in Sources */,
 				97E305771D795DA7005C398A /* ModuleGridView.m in Sources */,
@@ -890,6 +943,7 @@
 				97E304521D790C47005C398A /* AFHTTPRequestOperationManager.m in Sources */,
 				97E304541D790C47005C398A /* AFNetworkReachabilityManager.m in Sources */,
 				97E3049F1D790C89005C398A /* AWRefreshBaseView.m in Sources */,
+				99BA40D71D7ACD9B00CD3C24 /* PasswordVC.m in Sources */,
 				97E304B61D7916F3005C398A /* BaseNavBarVC.m in Sources */,
 				97E305831D796B6A005C398A /* LoadingView.m in Sources */,
 				97E3049D1D790C89005C398A /* CustomNavBar.m in Sources */,
@@ -1023,6 +1077,7 @@
 				97E304021D7904CC005C398A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

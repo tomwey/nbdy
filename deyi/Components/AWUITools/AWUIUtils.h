@@ -64,6 +64,11 @@ CGFloat AWFullScreenWidth();
 CGFloat AWFullScreenHeight();
 
 /**
+ * 获取头发丝大小
+ */
+CGFloat AWHairlineSize();
+
+/**
  * 获取一个矩形的中心点
  */
 CGPoint AWCenterOfRect(CGRect aRect);

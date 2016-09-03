@@ -20,15 +20,15 @@
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
 //    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
-    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSFontAttributeName : AWCustomFont(MAIN_TEXT_FONT, 0),
+    [[UINavigationBar appearance] setTitleTextAttributes:@{ NSFontAttributeName : AWCustomFont(MAIN_TEXT_FONT, 18),
                                                             NSForegroundColorAttributeName : MAIN_BLACK_COLOR }];
     [[UINavigationBar appearance] setBackgroundImage:AWImageFromColor([UIColor whiteColor])
                                        forBarMetrics:UIBarMetricsDefault];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    UIViewController *homeVC = [[NSClassFromString(@"HomeVC") alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:homeVC];
+    UIViewController *rootVC = [[NSClassFromString(@"LoginVC") alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
     self.window.rootViewController = nav;
     
     [self.window makeKeyAndVisible];

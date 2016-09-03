@@ -89,6 +89,11 @@ CGFloat AWFullScreenHeight()
     return CGRectGetHeight(AWFullScreenBounds());
 }
 
+CGFloat AWHairlineSize()
+{
+    return ( 1.0 / [[UIScreen mainScreen] scale] ) / 2.0;
+}
+
 /**
  * 获取一个矩形的中心点
  */

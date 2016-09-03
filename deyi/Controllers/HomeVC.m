@@ -107,7 +107,7 @@
         CGRect frame2 = CGRectMake(width * i, headLabel.bottom, width, 34);
 //        frame2 = CGRectInset(frame2, 15, 0);
         UILabel *earnLabel = AWCreateLabel(frame2,
-                                           @"00000",
+                                           @"1230",
                                            NSTextAlignmentCenter,
                                            AWCustomFont(MAIN_DIGIT_FONT,
                                                         24),
@@ -155,9 +155,9 @@
         UIImageView *iconView = AWCreateImageView(module.icon);
         iconView.frame = CGRectMake(0, 0, 32, 32);
         [gridView addSubview:iconView];
-        iconView.center = CGPointMake(gridView.width / 2, 20 + iconView.height / 2);
+        iconView.center = CGPointMake(gridView.width / 2, 15 + iconView.height / 2);
         
-        CGRect frame = CGRectMake(0, gridView.height - 10 - 37, gridView.width, 37);
+        CGRect frame = CGRectMake(0, gridView.height - 5 - 37, gridView.width, 37);
         UILabel *nameLabel = AWCreateLabel(frame, module.name,
                                            NSTextAlignmentCenter,
                                            AWCustomFont(MAIN_TEXT_FONT, 16),
@@ -194,7 +194,10 @@
 
 - (void)gotoSettings
 {
+    UIViewController *vc =
+    [[AWMediator sharedInstance] openVCWithName:@"SettingsVC" params:nil];
     
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)gridDidTap:(UIGestureRecognizer *)gesture

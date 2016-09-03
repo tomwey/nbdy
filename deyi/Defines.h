@@ -29,6 +29,8 @@
 
 #import "AWMediator.h"
 
+#import "AWKeyboardManager.h"
+
 #define MAIN_TEXT_FONT      @"FZY1JW--GB1-0"
 #define MAIN_DIGIT_FONT     @"CircularAirPro-Light"
 

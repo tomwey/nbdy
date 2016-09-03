@@ -111,55 +111,34 @@
     signupBtn.titleLabel.font =
     pwdBtn.titleLabel.font    = loginBtn.titleLabel.font;
     
-    // 添加通知
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillShow:)
-                                                 name:UIKeyboardWillShowNotification
-                                               object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillHide:)
-                                                 name:UIKeyboardWillHideNotification
-                                               object:nil];
-    
-    [scrollView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)]];
-    
+    // 自动滚动管理器
+    [[AWKeyboardManager sharedInstance] setAutoScrollUITextFieldsContainer:scrollView];
 }
 
-- (void)keyboardWillShow:(NSNotification *)noti
+- (void)viewWillAppear:(BOOL)animated
 {
-    CGRect keyboardEndFrame = [noti.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-    CGRect loginBtnFrame = [self.view convertRect:self.loginButton.frame fromView:self.scrollView];
+    [super viewWillAppear:animated];
     
-    CGFloat dty = CGRectGetHeight(loginBtnFrame) - CGRectGetHeight(keyboardEndFrame);
-    if ( dty < 0 ) {
-        [UIView animateWithDuration:[noti.userInfo[UIKeyboardAnimationDurationUserInfoKey] floatValue]
-                         animations:
-         ^{
-             self.scrollView.contentInset = UIEdgeInsetsMake(0, 0, CGRectGetMinY(loginBtnFrame) - CGRectGetMinY(keyboardEndFrame) + self.loginButton.height + 5, 0);
-             self.scrollView.contentOffset = CGPointMake(0, CGRectGetMinY(loginBtnFrame) - CGRectGetMinY(keyboardEndFrame) + self.loginButton.height + 5 );
-         }];
-    } else {
-        self.scrollView.contentInset = UIEdgeInsetsZero;
-        self.scrollView.contentOffset = CGPointZero;
-    }
+    // 添加键盘通知
+    [[AWKeyboardManager sharedInstance] registerKeyboardNotification];
+    
+    [[AWKeyboardManager sharedInstance] addAutoScrollUITextFields:
+     @[self.mobileField]];
+    
+    [[AWKeyboardManager sharedInstance] addLastAutoScrollUITextField:self.passwordField extraOffset:30 + 44];
 }
 
-- (void)keyboardWillHide:(NSNotification *)noti
+- (void)viewWillDisappear:(BOOL)animated
 {
-    if ( self.scrollView.contentInset.bottom > 0 ) {
-        [UIView animateWithDuration:[noti.userInfo[UIKeyboardAnimationDurationUserInfoKey] floatValue]
-                         animations:
-         ^{
-             self.scrollView.contentInset = UIEdgeInsetsZero;
-             self.scrollView.contentOffset = CGPointZero;
-         }];
-    }
-}
-
-- (void)hideKeyboard
-{
-    [self.mobileField resignFirstResponder];
-    [self.passwordField resignFirstResponder];
+    [super viewWillDisappear:animated];
+    
+    // 移除键盘通知
+    [[AWKeyboardManager sharedInstance] unregisterKeyboardNotification];
+    
+    [[AWKeyboardManager sharedInstance] removeAutoScrollUITextFields:
+     @[self.mobileField]];
+    
+    [[AWKeyboardManager sharedInstance] removeLastAutoScrollUITextField:self.passwordField];
 }
 
 - (void)forgetPassword

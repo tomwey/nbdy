@@ -123,6 +123,7 @@
 		99BA40D71D7ACD9B00CD3C24 /* PasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA40D61D7ACD9B00CD3C24 /* PasswordVC.m */; };
 		99BA40DB1D7ACDC500CD3C24 /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA40DA1D7ACDC500CD3C24 /* SettingsVC.m */; };
 		99BA40E31D7AD36B00CD3C24 /* AWMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA40E21D7AD36B00CD3C24 /* AWMediator.m */; };
+		99BA40EA1D7B0FF600CD3C24 /* AWKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA40E91D7B0FF600CD3C24 /* AWKeyboardManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -312,6 +313,8 @@
 		99BA40DA1D7ACDC500CD3C24 /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
 		99BA40E11D7AD36B00CD3C24 /* AWMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWMediator.h; sourceTree = "<group>"; };
 		99BA40E21D7AD36B00CD3C24 /* AWMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWMediator.m; sourceTree = "<group>"; };
+		99BA40E81D7B0FF600CD3C24 /* AWKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWKeyboardManager.h; sourceTree = "<group>"; };
+		99BA40E91D7B0FF600CD3C24 /* AWKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWKeyboardManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,6 +374,7 @@
 		97E304031D7905EF005C398A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				99BA40E71D7B0F7E00CD3C24 /* AWKeyboardManager */,
 				99BA40E01D7AD36B00CD3C24 /* AWMediator */,
 				99BA40CE1D7AC14400CD3C24 /* AWTextField */,
 				97E3056B1D794B06005C398A /* AWHairlineView */,
@@ -765,6 +769,15 @@
 			path = AWMediator;
 			sourceTree = "<group>";
 		};
+		99BA40E71D7B0F7E00CD3C24 /* AWKeyboardManager */ = {
+			isa = PBXGroup;
+			children = (
+				99BA40E81D7B0FF600CD3C24 /* AWKeyboardManager.h */,
+				99BA40E91D7B0FF600CD3C24 /* AWKeyboardManager.m */,
+			);
+			path = AWKeyboardManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -919,6 +932,7 @@
 				97E3049A1D790C89005C398A /* APIFileParam.m in Sources */,
 				97E305741D794F7E005C398A /* ModuleService.m in Sources */,
 				97E304B31D7916D8005C398A /* BaseVC.m in Sources */,
+				99BA40EA1D7B0FF600CD3C24 /* AWKeyboardManager.m in Sources */,
 				97E3045B1D790C47005C398A /* README.md in Sources */,
 				97E3057A1D795EE4005C398A /* GridView.m in Sources */,
 				97E3049C1D790C89005C398A /* APIRequest.m in Sources */,

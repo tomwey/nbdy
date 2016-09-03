@@ -101,9 +101,6 @@
     
     self.passwordField.top = self.codeField.bottom + 15;
     
-    self.mobileField.font   =
-    self.passwordField.font = AWCustomFont(MAIN_DIGIT_FONT, 16);
-    
     // 邀请码
     self.inviteCodeField = [[AWTextField alloc] initWithFrame:self.mobileField.frame];
     [self.scrollView addSubview:self.inviteCodeField];
@@ -111,6 +108,11 @@
     self.inviteCodeField.keyboardType = UIKeyboardTypePhonePad;
     
     self.inviteCodeField.top = self.passwordField.bottom + 15;
+    
+    self.mobileField.font   =
+    self.codeField.font     =
+    self.inviteCodeField.font =
+    self.passwordField.font = AWCustomFont(MAIN_DIGIT_FONT, 16);
     
     // 注册按钮
     self.signupButton = AWCreateTextButton(self.mobileField.frame, @"注册",
@@ -133,13 +135,34 @@
                                  forMode:NSRunLoopCommonModes];
     [self.countDownTimer setFireDate:[NSDate distantFuture]];
     
-    [self.scrollView addGestureRecognizer:
-     [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard)]];
+    // 自动滚动管理器
+    [[AWKeyboardManager sharedInstance] setAutoScrollUITextFieldsContainer:self.scrollView];
 }
 
-- (void)hideKeyboard
+- (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     
+    // 添加键盘通知
+    [[AWKeyboardManager sharedInstance] registerKeyboardNotification];
+    
+    [[AWKeyboardManager sharedInstance] addAutoScrollUITextFields:
+     @[self.mobileField, self.codeField, self.passwordField]];
+    
+    [[AWKeyboardManager sharedInstance] addLastAutoScrollUITextField:self.inviteCodeField extraOffset:30 + 44];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    // 移除键盘通知
+    [[AWKeyboardManager sharedInstance] unregisterKeyboardNotification];
+    
+    [[AWKeyboardManager sharedInstance] removeAutoScrollUITextFields:
+     @[self.mobileField, self.codeField, self.passwordField]];
+    
+    [[AWKeyboardManager sharedInstance] removeLastAutoScrollUITextField:self.inviteCodeField];
 }
 
 - (void)countDown

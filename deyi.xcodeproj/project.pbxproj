@@ -147,6 +147,7 @@
 		99BA41181D7C107E00CD3C24 /* SpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA41171D7C107E00CD3C24 /* SpinnerView.m */; };
 		99BA411B1D7C14D600CD3C24 /* WithdrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA411A1D7C14D600CD3C24 /* WithdrawVC.m */; };
 		99BA411E1D7C162900CD3C24 /* AWCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA411D1D7C162900CD3C24 /* AWCustomButton.m */; };
+		99BA41211D7C65C800CD3C24 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA41201D7C65C800CD3C24 /* NetworkService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -364,6 +365,8 @@
 		99BA411A1D7C14D600CD3C24 /* WithdrawVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawVC.m; sourceTree = "<group>"; };
 		99BA411C1D7C162900CD3C24 /* AWCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCustomButton.h; sourceTree = "<group>"; };
 		99BA411D1D7C162900CD3C24 /* AWCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCustomButton.m; sourceTree = "<group>"; };
+		99BA411F1D7C65C800CD3C24 /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
+		99BA41201D7C65C800CD3C24 /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -517,6 +520,8 @@
 			children = (
 				97E305721D794F7E005C398A /* ModuleService.h */,
 				97E305731D794F7E005C398A /* ModuleService.m */,
+				99BA411F1D7C65C800CD3C24 /* NetworkService.h */,
+				99BA41201D7C65C800CD3C24 /* NetworkService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1015,6 +1020,7 @@
 				97E304591D790C47005C398A /* AFURLSessionManager.m in Sources */,
 				99BA40D11D7AC15900CD3C24 /* AWTextField.m in Sources */,
 				97E305001D7925C0005C398A /* NSDataAdditions.m in Sources */,
+				99BA41211D7C65C800CD3C24 /* NetworkService.m in Sources */,
 				97E304581D790C47005C398A /* AFURLResponseSerialization.m in Sources */,
 				97E304B01D791668005C398A /* HomeVC.m in Sources */,
 				97E3045F1D790C47005C398A /* UIButton+AFNetworking.m in Sources */,

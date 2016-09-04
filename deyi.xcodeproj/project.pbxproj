@@ -144,6 +144,9 @@
 		99BA41131D7BF56A00CD3C24 /* icon_msg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99BA410F1D7BF56A00CD3C24 /* icon_msg@2x.png */; };
 		99BA41141D7BF56A00CD3C24 /* icon_msg@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99BA41101D7BF56A00CD3C24 /* icon_msg@3x.png */; };
 		99BA41151D7BF56A00CD3C24 /* default_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99BA41111D7BF56A00CD3C24 /* default_avatar@2x.png */; };
+		99BA41181D7C107E00CD3C24 /* SpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA41171D7C107E00CD3C24 /* SpinnerView.m */; };
+		99BA411B1D7C14D600CD3C24 /* WithdrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA411A1D7C14D600CD3C24 /* WithdrawVC.m */; };
+		99BA411E1D7C162900CD3C24 /* AWCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA411D1D7C162900CD3C24 /* AWCustomButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -355,6 +358,12 @@
 		99BA410F1D7BF56A00CD3C24 /* icon_msg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_msg@2x.png"; sourceTree = "<group>"; };
 		99BA41101D7BF56A00CD3C24 /* icon_msg@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_msg@3x.png"; sourceTree = "<group>"; };
 		99BA41111D7BF56A00CD3C24 /* default_avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default_avatar@2x.png"; sourceTree = "<group>"; };
+		99BA41161D7C107E00CD3C24 /* SpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerView.h; sourceTree = "<group>"; };
+		99BA41171D7C107E00CD3C24 /* SpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerView.m; sourceTree = "<group>"; };
+		99BA41191D7C14D600CD3C24 /* WithdrawVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WithdrawVC.h; sourceTree = "<group>"; };
+		99BA411A1D7C14D600CD3C24 /* WithdrawVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WithdrawVC.m; sourceTree = "<group>"; };
+		99BA411C1D7C162900CD3C24 /* AWCustomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWCustomButton.h; sourceTree = "<group>"; };
+		99BA411D1D7C162900CD3C24 /* AWCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCustomButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -521,6 +530,10 @@
 				97E305791D795EE4005C398A /* GridView.m */,
 				97E305811D796B6A005C398A /* LoadingView.h */,
 				97E305821D796B6A005C398A /* LoadingView.m */,
+				99BA41161D7C107E00CD3C24 /* SpinnerView.h */,
+				99BA41171D7C107E00CD3C24 /* SpinnerView.m */,
+				99BA411C1D7C162900CD3C24 /* AWCustomButton.h */,
+				99BA411D1D7C162900CD3C24 /* AWCustomButton.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -792,6 +805,8 @@
 				99BA40D61D7ACD9B00CD3C24 /* PasswordVC.m */,
 				99BA40D91D7ACDC500CD3C24 /* SettingsVC.h */,
 				99BA40DA1D7ACDC500CD3C24 /* SettingsVC.m */,
+				99BA41191D7C14D600CD3C24 /* WithdrawVC.h */,
+				99BA411A1D7C14D600CD3C24 /* WithdrawVC.m */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -1008,6 +1023,7 @@
 				99BA40CD1D7AB82200CD3C24 /* LoginVC.m in Sources */,
 				97E3045D1D790C47005C398A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				97E304981D790C89005C398A /* APIEntityReformer.m in Sources */,
+				99BA41181D7C107E00CD3C24 /* SpinnerView.m in Sources */,
 				97E305771D795DA7005C398A /* ModuleGridView.m in Sources */,
 				97E3049A1D790C89005C398A /* APIFileParam.m in Sources */,
 				97E305741D794F7E005C398A /* ModuleService.m in Sources */,
@@ -1031,8 +1047,10 @@
 				97E303F11D7904CC005C398A /* AppDelegate.m in Sources */,
 				97E3045E1D790C47005C398A /* UIAlertView+AFNetworking.m in Sources */,
 				97E304531D790C47005C398A /* AFHTTPSessionManager.m in Sources */,
+				99BA411E1D7C162900CD3C24 /* AWCustomButton.m in Sources */,
 				97E305031D7925C0005C398A /* NSStringAdditions.m in Sources */,
 				97E3045C1D790C47005C398A /* AFNetworkActivityIndicatorManager.m in Sources */,
+				99BA411B1D7C14D600CD3C24 /* WithdrawVC.m in Sources */,
 				97E3049B1D790C89005C398A /* APIManager.m in Sources */,
 				97E304521D790C47005C398A /* AFHTTPRequestOperationManager.m in Sources */,
 				97E304541D790C47005C398A /* AFNetworkReachabilityManager.m in Sources */,

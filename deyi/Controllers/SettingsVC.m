@@ -173,7 +173,8 @@
 
 - (void)gotoWithdraw
 {
-    
+    UIViewController *vc = [[AWMediator sharedInstance] openVCWithName:@"WithdrawVC" params:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (NSArray *)fetchSettingItems

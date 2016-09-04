@@ -50,6 +50,8 @@
 
 // views
 #import "LoadingView.h"
+#import "SpinnerView.h"
+#import "AWCustomButton.h"
 
 // controllers
 #import "WebViewVC.h"

@@ -71,6 +71,7 @@
         id obj = items[indexPath.row];
         
         cell.imageView.image = [UIImage imageNamed:obj[@"icon"]];
+        cell.imageView.frame = CGRectMake(0, 0, 24, 24);
         
         cell.textLabel.text = obj[@"name"];
         cell.textLabel.font = AWCustomFont(MAIN_TEXT_FONT, 16);
@@ -108,7 +109,7 @@
 - (void)addContentAtSection0:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
     if ( !self.avatarView ) {
-        self.avatarView = AWCreateImageView(nil);
+        self.avatarView = AWCreateImageView(@"default_avatar.png");
         [cell.contentView addSubview:self.avatarView];
         
         self.avatarView.frame = CGRectMake(0, 0, 48, 48);
@@ -117,7 +118,6 @@
         
         self.avatarView.position = CGPointMake(15, 64 / 2 - self.avatarView.height / 2);
         
-        self.avatarView.backgroundColor = HOME_HAIRLINE_COLOR;
     }
     
     if ( !self.nicknameLabel ) {
@@ -179,7 +179,7 @@
 - (NSArray *)fetchSettingItems
 {
     return @[@{
-          @"icon" : @"icon_sys_msg.png",
+          @"icon" : @"icon_msg.png",
           @"name" : @"消息"
           },
       @{

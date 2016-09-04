@@ -27,7 +27,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
-    UIViewController *rootVC = [[NSClassFromString(@"LoginVC") alloc] init];
+    UIViewController *rootVC = [[NSClassFromString(@"HomeVC") alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
     self.window.rootViewController = nav;
     

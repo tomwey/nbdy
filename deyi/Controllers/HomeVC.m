@@ -152,19 +152,30 @@
         
         Module *module = [modules objectAtIndex:i];
         
+        CGFloat iconHeight = 32;
+        CGFloat nameLabelHeight = 30;
         UIImageView *iconView = AWCreateImageView(module.icon);
-        iconView.frame = CGRectMake(0, 0, 32, 32);
+        iconView.frame = CGRectMake(0, 0, iconHeight, iconHeight);
         [gridView addSubview:iconView];
-        iconView.center = CGPointMake(gridView.width / 2, 15 + iconView.height / 2);
         
-        CGRect frame = CGRectMake(0, gridView.height - 5 - 37, gridView.width, 37);
+        CGRect frame = CGRectMake(0, iconView.bottom, gridView.width, nameLabelHeight);
         UILabel *nameLabel = AWCreateLabel(frame, module.name,
                                            NSTextAlignmentCenter,
                                            AWCustomFont(MAIN_TEXT_FONT, 16),
                                            MAIN_BLACK_COLOR);
         [gridView addSubview:nameLabel];
         
+        [nameLabel sizeToFit];
+        
         gridView.tag = i;
+        
+        CGFloat totalHeight = iconHeight + nameLabel.height;
+        CGFloat top = ( gridView.height - totalHeight ) / 3;
+        
+        iconView.top = top;
+        iconView.left = gridView.width / 2 - iconView.width / 2;
+        
+        nameLabel.center = CGPointMake(gridView.width / 2, iconView.bottom + top + nameLabel.height / 2);
         
         [gridView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(gridDidTap:)]];
         

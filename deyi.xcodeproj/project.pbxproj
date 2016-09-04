@@ -349,7 +349,6 @@
 			children = (
 				97E304261D790BF5005C398A /* External */,
 				97E304031D7905EF005C398A /* Components */,
-				97E3040D1D7905EF005C398A /* Services */,
 				97E304051D7905EF005C398A /* Models */,
 				97E3040E1D7905EF005C398A /* Views */,
 				97E304041D7905EF005C398A /* Controllers */,
@@ -476,7 +475,8 @@
 				97E305721D794F7E005C398A /* ModuleService.h */,
 				97E305731D794F7E005C398A /* ModuleService.m */,
 			);
-			path = Services;
+			name = Services;
+			path = ../Services;
 			sourceTree = "<group>";
 		};
 		97E3040E1D7905EF005C398A /* Views */ = {
@@ -751,6 +751,7 @@
 				99BA40CB1D7AB82200CD3C24 /* LoginVC.h */,
 				99BA40CC1D7AB82200CD3C24 /* LoginVC.m */,
 				99BA40D21D7ACD6B00CD3C24 /* SignupVC.h */,
+				97E3040D1D7905EF005C398A /* Services */,
 				99BA40D31D7ACD6B00CD3C24 /* SignupVC.m */,
 				99BA40D51D7ACD9B00CD3C24 /* PasswordVC.h */,
 				99BA40D61D7ACD9B00CD3C24 /* PasswordVC.m */,

@@ -34,6 +34,11 @@
     [self addLeftBarItemWithImage:@"btn_back.png" callback:^{
         [me back];
     }];
+    
+    // 添加手势滑动
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(back)];
+    swipe.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.contentView addGestureRecognizer:swipe];
 }
 
 - (UIView *)contentView

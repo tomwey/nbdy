@@ -56,6 +56,15 @@
     [self initModuleSection];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [[AWLocationManager sharedInstance] startUpdatingLocation:^(CLLocation *location, NSError *error) {
+        NSLog(@"location: %@, error: %@", location, error);
+    }];
+}
+
 - (void)initWIFISection
 {
     self.wifiSection = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.contentView.width, 96)];

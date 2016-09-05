@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		970FD7761D7CFF4A00F8EC15 /* AWLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 970FD7751D7CFF4A00F8EC15 /* AWLocationManager.m */; };
 		97E303EE1D7904CC005C398A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303ED1D7904CC005C398A /* main.m */; };
 		97E303F11D7904CC005C398A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303F01D7904CC005C398A /* AppDelegate.m */; };
 		97E304211D7909E3005C398A /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E3041C1D7909E3005C398A /* Default-375w-667h@2x.png */; };
@@ -151,6 +152,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		970FD7741D7CFF4A00F8EC15 /* AWLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWLocationManager.h; sourceTree = "<group>"; };
+		970FD7751D7CFF4A00F8EC15 /* AWLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWLocationManager.m; sourceTree = "<group>"; };
 		97E303E91D7904CC005C398A /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E303ED1D7904CC005C398A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97E303EF1D7904CC005C398A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -380,6 +383,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		970FD7731D7CFF3300F8EC15 /* AWLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				970FD7741D7CFF4A00F8EC15 /* AWLocationManager.h */,
+				970FD7751D7CFF4A00F8EC15 /* AWLocationManager.m */,
+			);
+			path = AWLocationManager;
+			sourceTree = "<group>";
+		};
 		97E303E01D7904CC005C398A = {
 			isa = PBXGroup;
 			children = (
@@ -426,6 +438,7 @@
 		97E304031D7905EF005C398A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				970FD7731D7CFF3300F8EC15 /* AWLocationManager */,
 				99BA40E71D7B0F7E00CD3C24 /* AWKeyboardManager */,
 				99BA40E01D7AD36B00CD3C24 /* AWMediator */,
 				99BA40CE1D7AC14400CD3C24 /* AWTextField */,
@@ -1057,6 +1070,7 @@
 				97E305031D7925C0005C398A /* NSStringAdditions.m in Sources */,
 				97E3045C1D790C47005C398A /* AFNetworkActivityIndicatorManager.m in Sources */,
 				99BA411B1D7C14D600CD3C24 /* WithdrawVC.m in Sources */,
+				970FD7761D7CFF4A00F8EC15 /* AWLocationManager.m in Sources */,
 				97E3049B1D790C89005C398A /* APIManager.m in Sources */,
 				97E304521D790C47005C398A /* AFHTTPRequestOperationManager.m in Sources */,
 				97E304541D790C47005C398A /* AFNetworkReachabilityManager.m in Sources */,

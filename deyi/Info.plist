@@ -65,6 +65,12 @@
 	<true/>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>《得益WIFI》需要使用您的地理位置，以便使用里面的各项功能。</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>《得益WIFI》需要使用您的地理位置，以便使用里面的各项功能。</string>
+	<key>privacy - location usage description</key>
+	<string>《得益WIFI》需要使用您的地理位置，以便使用里面的各项功能。</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

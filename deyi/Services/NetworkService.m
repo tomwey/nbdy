@@ -20,6 +20,18 @@
 @end
 @implementation NetworkService
 
++ (void)load
+{
+    [APIConfig sharedInstance].stageServer = @"http://dev.deyiwifi.com/api/v1";
+    [APIConfig sharedInstance].productionServer = @"http://deyiwifi.com/api/v1";
+    
+#if DEBUG
+    [[APIConfig sharedInstance] setDebugMode:YES];
+#else
+    [[APIConfig sharedInstance] setDebugMode:NO];
+#endif
+}
+
 - (void)dealloc
 {
     [self.getAPIManager cancelRequest];

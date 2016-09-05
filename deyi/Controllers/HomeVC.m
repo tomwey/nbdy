@@ -26,6 +26,10 @@
 
 @property (nonatomic, strong) LocationService *locationService;
 
+@property (nonatomic, strong) NetworkService  *loadEarnsService;
+
+@property (nonatomic, strong) NetworkService  *loadUnreadMessageService;
+
 @end
 
 #define kSectionMargin 10
@@ -333,6 +337,22 @@
         _locationService = [[LocationService alloc] init];
     }
     return _locationService;
+}
+
+- (NetworkService *)loadEarnsService
+{
+    if ( !_loadEarnsService ) {
+        _loadEarnsService = [[NetworkService alloc] init];
+    }
+    return _loadEarnsService;
+}
+
+- (NetworkService *)loadUnreadMessageService
+{
+    if ( !_loadUnreadMessageService ) {
+        _loadUnreadMessageService = [[NetworkService alloc] init];
+    }
+    return _loadUnreadMessageService;
 }
 
 @end

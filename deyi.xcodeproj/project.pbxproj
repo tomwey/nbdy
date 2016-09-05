@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		970FD7761D7CFF4A00F8EC15 /* AWLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 970FD7751D7CFF4A00F8EC15 /* AWLocationManager.m */; };
+		97918D8D1D7D146300801780 /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918D8C1D7D146300801780 /* LocationView.m */; };
+		97918D901D7D178800801780 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918D8F1D7D178800801780 /* LocationService.m */; };
+		97918D931D7D57E400801780 /* LocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918D921D7D57E400801780 /* LocationInfo.m */; };
 		97E303EE1D7904CC005C398A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303ED1D7904CC005C398A /* main.m */; };
 		97E303F11D7904CC005C398A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303F01D7904CC005C398A /* AppDelegate.m */; };
 		97E304211D7909E3005C398A /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E3041C1D7909E3005C398A /* Default-375w-667h@2x.png */; };
@@ -154,6 +157,12 @@
 /* Begin PBXFileReference section */
 		970FD7741D7CFF4A00F8EC15 /* AWLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWLocationManager.h; sourceTree = "<group>"; };
 		970FD7751D7CFF4A00F8EC15 /* AWLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWLocationManager.m; sourceTree = "<group>"; };
+		97918D8B1D7D146300801780 /* LocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationView.h; sourceTree = "<group>"; };
+		97918D8C1D7D146300801780 /* LocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationView.m; sourceTree = "<group>"; };
+		97918D8E1D7D178800801780 /* LocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		97918D8F1D7D178800801780 /* LocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		97918D911D7D57E400801780 /* LocationInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationInfo.h; sourceTree = "<group>"; };
+		97918D921D7D57E400801780 /* LocationInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationInfo.m; sourceTree = "<group>"; };
 		97E303E91D7904CC005C398A /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E303ED1D7904CC005C398A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97E303EF1D7904CC005C398A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -476,6 +485,8 @@
 			children = (
 				97E3056F1D794E70005C398A /* Module.h */,
 				97E305701D794E70005C398A /* Module.m */,
+				97918D911D7D57E400801780 /* LocationInfo.h */,
+				97918D921D7D57E400801780 /* LocationInfo.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -535,6 +546,8 @@
 				97E305731D794F7E005C398A /* ModuleService.m */,
 				99BA411F1D7C65C800CD3C24 /* NetworkService.h */,
 				99BA41201D7C65C800CD3C24 /* NetworkService.m */,
+				97918D8E1D7D178800801780 /* LocationService.h */,
+				97918D8F1D7D178800801780 /* LocationService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -552,6 +565,8 @@
 				99BA41171D7C107E00CD3C24 /* SpinnerView.m */,
 				99BA411C1D7C162900CD3C24 /* AWCustomButton.h */,
 				99BA411D1D7C162900CD3C24 /* AWCustomButton.m */,
+				97918D8B1D7D146300801780 /* LocationView.h */,
+				97918D8C1D7D146300801780 /* LocationView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1023,6 +1038,7 @@
 				97E304601D790C47005C398A /* UIImageView+AFNetworking.m in Sources */,
 				99BA40E31D7AD36B00CD3C24 /* AWMediator.m in Sources */,
 				97E304A61D790C89005C398A /* UITableView+RemoveBlankCells.m in Sources */,
+				97918D931D7D57E400801780 /* LocationInfo.m in Sources */,
 				97E3049E1D790C89005C398A /* UIView+AWGeometry.m in Sources */,
 				97E304A41D790C89005C398A /* UITableView+LoadEmptyOrErrorHandle.m in Sources */,
 				97E304561D790C47005C398A /* AFURLConnectionOperation.m in Sources */,
@@ -1063,6 +1079,7 @@
 				97E304A01D790C89005C398A /* UIScrollView+AWRefresh.m in Sources */,
 				97E304A21D790C89005C398A /* AWTableViewDataSource.m in Sources */,
 				97E304961D790C89005C398A /* APIConfig.m in Sources */,
+				97918D901D7D178800801780 /* LocationService.m in Sources */,
 				97E303F11D7904CC005C398A /* AppDelegate.m in Sources */,
 				97E3045E1D790C47005C398A /* UIAlertView+AFNetworking.m in Sources */,
 				97E304531D790C47005C398A /* AFHTTPSessionManager.m in Sources */,
@@ -1078,6 +1095,7 @@
 				99BA40D71D7ACD9B00CD3C24 /* PasswordVC.m in Sources */,
 				97E304B61D7916F3005C398A /* BaseNavBarVC.m in Sources */,
 				97E305831D796B6A005C398A /* LoadingView.m in Sources */,
+				97918D8D1D7D146300801780 /* LocationView.m in Sources */,
 				97E3049D1D790C89005C398A /* CustomNavBar.m in Sources */,
 				97E303EE1D7904CC005C398A /* main.m in Sources */,
 			);

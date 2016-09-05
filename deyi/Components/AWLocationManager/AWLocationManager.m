@@ -92,7 +92,9 @@
 - (void)locationManager:(CLLocationManager *)manager
        didFailWithError:(NSError *)error
 {
-    [self handleCompletion:nil error:error];
+    [self handleCompletion:nil error:[NSError errorWithDomain:@"定位失败"
+                                                         code:error.code
+                                                     userInfo:nil]];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
@@ -105,6 +107,8 @@
     if ( !_locationManager ) {
         _locationManager = [[CLLocationManager alloc] init];
         _locationManager.delegate = self;
+        _locationManager.distanceFilter = kCLDistanceFilterNone;
+        _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     }
     return _locationManager;
 }

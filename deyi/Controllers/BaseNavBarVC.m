@@ -145,6 +145,26 @@
     }
 }
 
+- (void)addLeftBarItemWithView:(UIView *)aView
+{
+    if ( aView == nil ) {
+        self.navigationItem.leftBarButtonItem = nil;
+    } else {
+        self.navigationItem.leftBarButtonItem =
+        [[UIBarButtonItem alloc] initWithCustomView:aView];
+    }
+}
+
+- (void)addRightBarItemWithView:(UIView *)aView
+{
+    if ( aView == nil ) {
+        self.navigationItem.rightBarButtonItem = nil;
+    } else {
+        self.navigationItem.rightBarButtonItem =
+        [[UIBarButtonItem alloc] initWithCustomView:aView];
+    }
+}
+
 - (void)btnClicked:(UIButton *)sender
 {
     switch (sender.tag) {

@@ -46,14 +46,18 @@
 
 // models
 #import "Module.h"
+#import "LocationInfo.h"
 
 // services
 #import "ModuleService.h"
+#import "LocationService.h"
+#import "NetworkService.h"
 
 // views
 #import "LoadingView.h"
 #import "SpinnerView.h"
 #import "AWCustomButton.h"
+#import "LocationView.h"
 
 // controllers
 #import "WebViewVC.h"

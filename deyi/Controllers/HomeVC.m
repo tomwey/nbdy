@@ -22,6 +22,10 @@
 
 @property (nonatomic, strong) ModuleService *moduleService;
 
+@property (nonatomic, strong) LocationView *locationView;
+
+@property (nonatomic, strong) LocationService *locationService;
+
 @end
 
 #define kSectionMargin 10
@@ -35,6 +39,14 @@
     self.title = @"得益";
     
     __weak typeof(self) me = self;
+    
+    // 添加位置视图
+    self.locationView = [[LocationView alloc] init];
+    [self addLeftBarItemWithView:self.locationView];
+    self.locationView.reloadLocateCallback = ^{
+        [me fetchLocation];
+    };
+    
     [self addRightBarItemWithImage:@"btn_settings.png" callback:^{
         [me gotoSettings];
     }];
@@ -54,15 +66,11 @@
     
     // 初始化功能区域
     [self initModuleSection];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
     
-    [[AWLocationManager sharedInstance] startUpdatingLocation:^(CLLocation *location, NSError *error) {
-        NSLog(@"location: %@, error: %@", location, error);
-    }];
+    // 当页面可见的时候，获取位置信息
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self fetchLocation];
+    });
 }
 
 - (void)initWIFISection
@@ -212,6 +220,70 @@
     
 }
 
+- (void)handleLocationParse:(id)result error:(NSError *)error
+{
+    if ( error ) {
+        [self.locationView setLocationStatus:LocationStatusParseError message:@"位置解析失败"];
+    } else {
+        NSLog(@"result: %@", result);
+        [self.locationView setLocationStatus:LocationStatusSuccess message:[result city]];
+    }
+}
+
+- (void)startFetchingLocation
+{
+    [[AWLocationManager sharedInstance] startUpdatingLocation:^(CLLocation *location, NSError *error) {
+        if ( error ) {
+            [self.locationView setLocationStatus:LocationStatusLocateError message:error.domain];
+        } else {
+            [self.locationView setLocationStatus:LocationStatusParsing message:@"位置解析中"];
+            
+            [self startParsingLocation:location];
+        }
+    }];
+}
+
+- (void)startParsingLocation:(CLLocation *)location
+{
+    if (!location) return;
+    
+    __weak typeof(self) me = self;
+    [self.locationService parseLocation:location completion:^(id result, NSError *error) {
+        [me handleLocationParse:result error:error];
+    }];
+}
+
+- (void)fetchLocation
+{
+    LocationStatus status = self.locationView.currentLocationStatus;
+    switch (status) {
+        case LocationStatusDefault:
+        {
+            [self.locationView setLocationStatus:LocationStatusLocating message:@"定位中"];
+            
+            [self startFetchingLocation];
+        }
+            break;
+        case LocationStatusLocateError:
+        {
+            [self.locationView setLocationStatus:LocationStatusLocating message:@"定位中"];
+            
+            [self startFetchingLocation];
+        }
+            break;
+        case LocationStatusParseError:
+        {
+            [self.locationView setLocationStatus:LocationStatusLocating message:@"位置解析中"];
+            
+            [self startParsingLocation:[[AWLocationManager sharedInstance] currentLocation]];
+        }
+            break;
+            
+        default:
+            break;
+    }
+}
+
 - (void)gotoSettings
 {
     UIViewController *vc =
@@ -253,6 +325,14 @@
 - (UILabel *)balanceLabel
 {
     return (UILabel *)[self.earningsSection viewWithTag:10002];
+}
+
+- (LocationService *)locationService
+{
+    if ( !_locationService ) {
+        _locationService = [[LocationService alloc] init];
+    }
+    return _locationService;
 }
 
 @end

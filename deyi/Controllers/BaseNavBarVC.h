@@ -17,4 +17,7 @@
 - (UIView *)addLeftBarItemWithTitle:(NSString *)title  size:(CGSize)size callback:(void (^)(void))callback;
 - (UIView *)addRightBarItemWithTitle:(NSString *)title size:(CGSize)size callback:(void (^)(void))callback;
 
+- (void)addLeftBarItemWithView:(UIView *)aView;
+- (void)addRightBarItemWithView:(UIView *)aView;
+
 @end

@@ -51,7 +51,12 @@
     [self.contentView addSubview:self.scrollView];
     self.scrollView.showsVerticalScrollIndicator = NO;
     
-    CGRect frame = CGRectMake(15, 15, self.contentView.width - 30, 44);
+//    CGRect frame = CGRectMake(15, 15, self.contentView.width - 30, 44);
+    CGFloat fieldWidth = floorf(self.contentView.width * 0.82);
+    CGRect frame = CGRectMake(self.contentView.width / 2 - fieldWidth / 2,
+                       self.contentView.width / 2 - fieldWidth / 2,
+                       fieldWidth,
+                       44);
     
     // 手机
     self.mobileField = [[AWTextField alloc] initWithFrame:frame];
@@ -62,7 +67,7 @@
     // 验证码
     self.codeField = [[AWTextField alloc] initWithFrame:self.mobileField.frame];
     
-    self.codeField.width = self.codeField.width * 0.6;
+    self.codeField.width = self.codeField.width * 0.58;
     self.codeField.top = self.mobileField.bottom + 15;
     
     [self.scrollView addSubview:self.codeField];

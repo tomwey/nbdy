@@ -48,8 +48,10 @@
                                        MAIN_RED_COLOR);
     [self.scrollView addSubview:logoLabel];
     
-    frame = CGRectMake(15, logoLabel.bottom + 20,
-                       self.contentView.width - 30,
+    CGFloat fieldWidth = floorf(self.contentView.width * 0.82);
+    frame = CGRectMake(self.contentView.width / 2 - fieldWidth / 2,
+                       logoLabel.bottom + 20,
+                       fieldWidth,
                        44);
     
     self.mobileField = [[AWTextField alloc] initWithFrame:frame];
@@ -84,7 +86,7 @@
     loginBtn.titleLabel.font = AWCustomFont(MAIN_TEXT_FONT, 16);
     
     // 注册按钮
-    CGFloat width = ( self.contentView.width - 3 * loginBtn.left ) / 2;
+    CGFloat width = ( fieldWidth - 15 ) / 2;
     UIButton* signupBtn = AWCreateTextButton(CGRectMake(0, 0, width, loginBtn.height),
                                              @"免费注册",
                                              MAIN_RED_COLOR, self,
@@ -102,7 +104,7 @@
                                           MAIN_RED_COLOR, self,
                                           @selector(forgetPassword));
     [scrollView addSubview:pwdBtn];
-    pwdBtn.left = signupBtn.right + signupBtn.left;
+    pwdBtn.left = self.loginButton.right - pwdBtn.width;
     
     pwdBtn.cornerRadius = signupBtn.cornerRadius;
     pwdBtn.layer.borderColor = signupBtn.layer.borderColor;

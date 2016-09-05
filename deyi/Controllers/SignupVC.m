@@ -55,8 +55,10 @@
                                        MAIN_RED_COLOR);
     [self.scrollView addSubview:logoLabel];
     
-    frame = CGRectMake(15, logoLabel.bottom + 20,
-                       self.contentView.width - 30,
+    CGFloat fieldWidth = floorf(self.contentView.width * 0.82);
+    frame = CGRectMake(self.contentView.width / 2 - fieldWidth / 2,
+                       logoLabel.bottom + 20,
+                       fieldWidth,
                        44);
     
     // 手机
@@ -68,7 +70,7 @@
     // 验证码
     self.codeField = [[AWTextField alloc] initWithFrame:self.mobileField.frame];
     
-    self.codeField.width = self.codeField.width * 0.6;
+    self.codeField.width = self.codeField.width * 0.58;
     self.codeField.top = self.mobileField.bottom + 15;
     
     [self.scrollView addSubview:self.codeField];

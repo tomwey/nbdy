@@ -50,4 +50,9 @@
  */
 - (NSComparisonResult)versionStringCompare:(NSString *)otherVersionString;
 
+/**
+ * 检查字符串是否匹配一个正则表达式
+ */
+- (BOOL)matches:(NSString *)regex;
+
 @end

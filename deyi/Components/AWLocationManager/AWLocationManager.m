@@ -99,7 +99,10 @@
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
 {
-    
+    if ( status == kCLAuthorizationStatusAuthorizedAlways ||
+         status == kCLAuthorizationStatusAuthorizedWhenInUse ) {
+        [self.locationManager startUpdatingLocation];
+    }
 }
 
 - (CLLocationManager *)locationManager

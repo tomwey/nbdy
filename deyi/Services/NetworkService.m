@@ -63,6 +63,10 @@
 {
     self.postResultCallback = completion;
     
+    if ( !self.postAPIManager ) {
+        self.postAPIManager = [[APIManager alloc] initWithDelegate:self];
+    }
+    
     NSMutableDictionary *newParams = [[NSMutableDictionary alloc] init];
     NSMutableArray *fileParams = [NSMutableArray array];
     [params enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {

@@ -52,6 +52,7 @@
 #import "ModuleService.h"
 #import "LocationService.h"
 #import "NetworkService.h"
+#import "UserService.h"
 
 // views
 #import "LoadingView.h"

@@ -152,6 +152,9 @@
 		99BA411B1D7C14D600CD3C24 /* WithdrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA411A1D7C14D600CD3C24 /* WithdrawVC.m */; };
 		99BA411E1D7C162900CD3C24 /* AWCustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA411D1D7C162900CD3C24 /* AWCustomButton.m */; };
 		99BA41211D7C65C800CD3C24 /* NetworkService.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA41201D7C65C800CD3C24 /* NetworkService.m */; };
+		99BA41241D7D955200CD3C24 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA41231D7D955200CD3C24 /* User.m */; };
+		99BA41271D7D968B00CD3C24 /* Shipment.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA41261D7D968B00CD3C24 /* Shipment.m */; };
+		99BA412A1D7D998200CD3C24 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA41291D7D998200CD3C24 /* UserService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -379,6 +382,12 @@
 		99BA411D1D7C162900CD3C24 /* AWCustomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWCustomButton.m; sourceTree = "<group>"; };
 		99BA411F1D7C65C800CD3C24 /* NetworkService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkService.h; sourceTree = "<group>"; };
 		99BA41201D7C65C800CD3C24 /* NetworkService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkService.m; sourceTree = "<group>"; };
+		99BA41221D7D955200CD3C24 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		99BA41231D7D955200CD3C24 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		99BA41251D7D968B00CD3C24 /* Shipment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shipment.h; sourceTree = "<group>"; };
+		99BA41261D7D968B00CD3C24 /* Shipment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shipment.m; sourceTree = "<group>"; };
+		99BA41281D7D998200CD3C24 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
+		99BA41291D7D998200CD3C24 /* UserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -487,6 +496,10 @@
 				97E305701D794E70005C398A /* Module.m */,
 				97918D911D7D57E400801780 /* LocationInfo.h */,
 				97918D921D7D57E400801780 /* LocationInfo.m */,
+				99BA41221D7D955200CD3C24 /* User.h */,
+				99BA41231D7D955200CD3C24 /* User.m */,
+				99BA41251D7D968B00CD3C24 /* Shipment.h */,
+				99BA41261D7D968B00CD3C24 /* Shipment.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -548,6 +561,8 @@
 				99BA41201D7C65C800CD3C24 /* NetworkService.m */,
 				97918D8E1D7D178800801780 /* LocationService.h */,
 				97918D8F1D7D178800801780 /* LocationService.m */,
+				99BA41281D7D998200CD3C24 /* UserService.h */,
+				99BA41291D7D998200CD3C24 /* UserService.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1054,8 +1069,10 @@
 				97E304B01D791668005C398A /* HomeVC.m in Sources */,
 				97E3045F1D790C47005C398A /* UIButton+AFNetworking.m in Sources */,
 				97E305801D796870005C398A /* WebViewVC.m in Sources */,
+				99BA41241D7D955200CD3C24 /* User.m in Sources */,
 				99BA40DB1D7ACDC500CD3C24 /* SettingsVC.m in Sources */,
 				99BA40CD1D7AB82200CD3C24 /* LoginVC.m in Sources */,
+				99BA412A1D7D998200CD3C24 /* UserService.m in Sources */,
 				97E3045D1D790C47005C398A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				97E304981D790C89005C398A /* APIEntityReformer.m in Sources */,
 				99BA41181D7C107E00CD3C24 /* SpinnerView.m in Sources */,
@@ -1076,6 +1093,7 @@
 				97E3056E1D794B1C005C398A /* AWHairlineView.m in Sources */,
 				97E304631D790C47005C398A /* UIWebView+AFNetworking.m in Sources */,
 				97E304A31D790C89005C398A /* UITableView+CompatibilityHandle.m in Sources */,
+				99BA41271D7D968B00CD3C24 /* Shipment.m in Sources */,
 				97E304A01D790C89005C398A /* UIScrollView+AWRefresh.m in Sources */,
 				97E304A21D790C89005C398A /* AWTableViewDataSource.m in Sources */,
 				97E304961D790C89005C398A /* APIConfig.m in Sources */,

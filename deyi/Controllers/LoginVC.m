@@ -159,7 +159,30 @@
 
 - (void)login
 {
+    if ( [[self.mobileField.text trim] length] == 0 ) {
+        return;
+    }
     
+    if ( ![self.mobileField.text matches:@"^1[3|4|5|7|8][0-9]\\d{4,8}$"] ) {
+        return;
+    }
+    
+    [SpinnerView showSpinnerInView:self.contentView];
+    
+    [[UserService sharedInstance] loginWithMobile:self.mobileField.text
+                                         password:self.passwordField.text
+                                       completion:^(User *aUser, NSError *error)
+     {
+         [SpinnerView hideSpinnerForView:self.contentView];
+         
+         if ( error ) {
+             
+         } else {
+             UIViewController *vc =
+             [[AWMediator sharedInstance] openVCWithName:@"HomeVC" params:nil];
+             [self.navigationController pushViewController:vc animated:NO];
+         }
+     }];
 }
 
 @end

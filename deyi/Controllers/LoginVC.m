@@ -167,13 +167,13 @@
         return;
     }
     
-    [SpinnerView showSpinnerInView:self.contentView];
+    [self.loginButton startLoading];
     
     [[UserService sharedInstance] loginWithMobile:self.mobileField.text
                                          password:self.passwordField.text
                                        completion:^(User *aUser, NSError *error)
      {
-         [SpinnerView hideSpinnerForView:self.contentView];
+         [self.loginButton finishLoading];
          
          if ( error ) {
              

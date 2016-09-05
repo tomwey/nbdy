@@ -155,6 +155,7 @@
 		99BA41241D7D955200CD3C24 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA41231D7D955200CD3C24 /* User.m */; };
 		99BA41271D7D968B00CD3C24 /* Shipment.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA41261D7D968B00CD3C24 /* Shipment.m */; };
 		99BA412A1D7D998200CD3C24 /* UserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA41291D7D998200CD3C24 /* UserService.m */; };
+		99BA412E1D7DBD7600CD3C24 /* UIButton+AWButtonLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BA412D1D7DBD7600CD3C24 /* UIButton+AWButtonLoading.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -388,6 +389,9 @@
 		99BA41261D7D968B00CD3C24 /* Shipment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shipment.m; sourceTree = "<group>"; };
 		99BA41281D7D998200CD3C24 /* UserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserService.h; sourceTree = "<group>"; };
 		99BA41291D7D998200CD3C24 /* UserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserService.m; sourceTree = "<group>"; };
+		99BA412C1D7DBD7600CD3C24 /* UIButton+AWButtonLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+AWButtonLoading.h"; sourceTree = "<group>"; };
+		99BA412D1D7DBD7600CD3C24 /* UIButton+AWButtonLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+AWButtonLoading.m"; sourceTree = "<group>"; };
+		99BA412F1D7DC09700CD3C24 /* AWButtonLoading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWButtonLoading.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -456,6 +460,7 @@
 		97E304031D7905EF005C398A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				99BA412B1D7DBD4700CD3C24 /* AWButtonLoading */,
 				970FD7731D7CFF3300F8EC15 /* AWLocationManager */,
 				99BA40E71D7B0F7E00CD3C24 /* AWKeyboardManager */,
 				99BA40E01D7AD36B00CD3C24 /* AWMediator */,
@@ -901,6 +906,16 @@
 			path = "App Icon";
 			sourceTree = "<group>";
 		};
+		99BA412B1D7DBD4700CD3C24 /* AWButtonLoading */ = {
+			isa = PBXGroup;
+			children = (
+				99BA412C1D7DBD7600CD3C24 /* UIButton+AWButtonLoading.h */,
+				99BA412D1D7DBD7600CD3C24 /* UIButton+AWButtonLoading.m */,
+				99BA412F1D7DC09700CD3C24 /* AWButtonLoading.h */,
+			);
+			path = AWButtonLoading;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1081,6 +1096,7 @@
 				97E305741D794F7E005C398A /* ModuleService.m in Sources */,
 				97E304B31D7916D8005C398A /* BaseVC.m in Sources */,
 				99BA40EA1D7B0FF600CD3C24 /* AWKeyboardManager.m in Sources */,
+				99BA412E1D7DBD7600CD3C24 /* UIButton+AWButtonLoading.m in Sources */,
 				97E3045B1D790C47005C398A /* README.md in Sources */,
 				97E3057A1D795EE4005C398A /* GridView.m in Sources */,
 				97E3049C1D790C89005C398A /* APIRequest.m in Sources */,

@@ -35,6 +35,8 @@
 
 #import "AWButtonLoading.h"
 
+#import "UIImageView+AFNetworking.h"
+
 #define MAIN_TEXT_FONT      @"FZY1JW--GB1-0"
 #define MAIN_DIGIT_FONT     @"CircularAirPro-Light"
 
@@ -49,6 +51,9 @@
 #define API_V1_LOAD_EARNINGS             @"/earnings/stat"
 #define API_V1_LOAD_UNREAD_MESSAGE_COUNT @"/messages/unread_count"
 #define API_V1_CHECKIN                   @"/checkins"
+#define API_V1_CHANNELS_LIST             @"/channels/list"
+#define API_V1_FOLLOW_LIST               @"/follow_tasks/list"
+#define API_V1_SHARE_LIST                @"/share_tasks/list"
 
 // models
 #import "Module.h"

@@ -19,6 +19,12 @@
 		97918F9C1D7E6F2700801780 /* ShopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918F9B1D7E6F2700801780 /* ShopVC.m */; };
 		97918F9F1D7E6F3200801780 /* RentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918F9E1D7E6F3200801780 /* RentVC.m */; };
 		97918FA21D7E6F3C00801780 /* HelpVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FA11D7E6F3C00801780 /* HelpVC.m */; };
+		97918FA51D7EA38900801780 /* ChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FA41D7EA38900801780 /* ChannelCell.m */; };
+		97918FA81D7EAC6F00801780 /* DataListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FA71D7EAC6F00801780 /* DataListVC.m */; };
+		97918FAB1D7EB58B00801780 /* FollowListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FAA1D7EB58B00801780 /* FollowListVC.m */; };
+		97918FAE1D7EB5AE00801780 /* ShareFriendsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FAD1D7EB5AE00801780 /* ShareFriendsListVC.m */; };
+		97918FB21D7EB7D300801780 /* FollowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FB11D7EB7D300801780 /* FollowCell.m */; };
+		97918FB51D7EB7DE00801780 /* ShareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FB41D7EB7DE00801780 /* ShareCell.m */; };
 		97E303EE1D7904CC005C398A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303ED1D7904CC005C398A /* main.m */; };
 		97E303F11D7904CC005C398A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303F01D7904CC005C398A /* AppDelegate.m */; };
 		97E304211D7909E3005C398A /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E3041C1D7909E3005C398A /* Default-375w-667h@2x.png */; };
@@ -190,6 +196,18 @@
 		97918F9E1D7E6F3200801780 /* RentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RentVC.m; sourceTree = "<group>"; };
 		97918FA01D7E6F3C00801780 /* HelpVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpVC.h; sourceTree = "<group>"; };
 		97918FA11D7E6F3C00801780 /* HelpVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpVC.m; sourceTree = "<group>"; };
+		97918FA31D7EA38900801780 /* ChannelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChannelCell.h; sourceTree = "<group>"; };
+		97918FA41D7EA38900801780 /* ChannelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChannelCell.m; sourceTree = "<group>"; };
+		97918FA61D7EAC6F00801780 /* DataListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataListVC.h; sourceTree = "<group>"; };
+		97918FA71D7EAC6F00801780 /* DataListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataListVC.m; sourceTree = "<group>"; };
+		97918FA91D7EB58B00801780 /* FollowListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowListVC.h; sourceTree = "<group>"; };
+		97918FAA1D7EB58B00801780 /* FollowListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowListVC.m; sourceTree = "<group>"; };
+		97918FAC1D7EB5AE00801780 /* ShareFriendsListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareFriendsListVC.h; sourceTree = "<group>"; };
+		97918FAD1D7EB5AE00801780 /* ShareFriendsListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareFriendsListVC.m; sourceTree = "<group>"; };
+		97918FB01D7EB7D300801780 /* FollowCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FollowCell.h; sourceTree = "<group>"; };
+		97918FB11D7EB7D300801780 /* FollowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowCell.m; sourceTree = "<group>"; };
+		97918FB31D7EB7DE00801780 /* ShareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareCell.h; sourceTree = "<group>"; };
+		97918FB41D7EB7DE00801780 /* ShareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareCell.m; sourceTree = "<group>"; };
 		97E303E91D7904CC005C398A /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E303ED1D7904CC005C398A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97E303EF1D7904CC005C398A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -436,6 +454,32 @@
 			path = AWLocationManager;
 			sourceTree = "<group>";
 		};
+		97918FAF1D7EB5EF00801780 /* ShareTask */ = {
+			isa = PBXGroup;
+			children = (
+				97918F8E1D7E6EF000801780 /* ShareListVC.h */,
+				97918F8F1D7E6EF000801780 /* ShareListVC.m */,
+				97918FA91D7EB58B00801780 /* FollowListVC.h */,
+				97918FAA1D7EB58B00801780 /* FollowListVC.m */,
+				97918FAC1D7EB5AE00801780 /* ShareFriendsListVC.h */,
+				97918FAD1D7EB5AE00801780 /* ShareFriendsListVC.m */,
+			);
+			name = ShareTask;
+			sourceTree = "<group>";
+		};
+		97918FB61D7EB84A00801780 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				97918FA31D7EA38900801780 /* ChannelCell.h */,
+				97918FA41D7EA38900801780 /* ChannelCell.m */,
+				97918FB01D7EB7D300801780 /* FollowCell.h */,
+				97918FB11D7EB7D300801780 /* FollowCell.m */,
+				97918FB31D7EB7DE00801780 /* ShareCell.h */,
+				97918FB41D7EB7DE00801780 /* ShareCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		97E303E01D7904CC005C398A = {
 			isa = PBXGroup;
 			children = (
@@ -503,19 +547,20 @@
 		97E304041D7905EF005C398A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				97918FAF1D7EB5EF00801780 /* ShareTask */,
 				99BA40D81D7ACDA500CD3C24 /* User */,
 				97E304B11D7916D8005C398A /* BaseVC.h */,
 				97E304B21D7916D8005C398A /* BaseVC.m */,
 				97E304B41D7916F3005C398A /* BaseNavBarVC.h */,
 				97E304B51D7916F3005C398A /* BaseNavBarVC.m */,
+				97918FA61D7EAC6F00801780 /* DataListVC.h */,
+				97918FA71D7EAC6F00801780 /* DataListVC.m */,
 				97E304AE1D791668005C398A /* HomeVC.h */,
 				97E304AF1D791668005C398A /* HomeVC.m */,
 				97E3057E1D796870005C398A /* WebViewVC.h */,
 				97E3057F1D796870005C398A /* WebViewVC.m */,
 				97918F8B1D7E6ED600801780 /* ChannelListVC.h */,
 				97918F8C1D7E6ED600801780 /* ChannelListVC.m */,
-				97918F8E1D7E6EF000801780 /* ShareListVC.h */,
-				97918F8F1D7E6EF000801780 /* ShareListVC.m */,
 				97918F911D7E6EFB00801780 /* AdListVC.h */,
 				97918F921D7E6EFB00801780 /* AdListVC.m */,
 				97918F941D7E6F0A00801780 /* InviteVC.h */,
@@ -613,6 +658,7 @@
 		97E3040E1D7905EF005C398A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				97918FB61D7EB84A00801780 /* Cells */,
 				97E305751D795DA7005C398A /* ModuleGridView.h */,
 				97E305761D795DA7005C398A /* ModuleGridView.m */,
 				97E305781D795EE4005C398A /* GridView.h */,
@@ -1103,18 +1149,21 @@
 				97918F9F1D7E6F3200801780 /* RentVC.m in Sources */,
 				97E304571D790C47005C398A /* AFURLRequestSerialization.m in Sources */,
 				97E304991D790C89005C398A /* APIError.m in Sources */,
+				97918FB21D7EB7D300801780 /* FollowCell.m in Sources */,
 				97E304601D790C47005C398A /* UIImageView+AFNetworking.m in Sources */,
 				99BA40E31D7AD36B00CD3C24 /* AWMediator.m in Sources */,
 				97E304A61D790C89005C398A /* UITableView+RemoveBlankCells.m in Sources */,
 				97918D931D7D57E400801780 /* LocationInfo.m in Sources */,
 				97E3049E1D790C89005C398A /* UIView+AWGeometry.m in Sources */,
 				97E304A41D790C89005C398A /* UITableView+LoadEmptyOrErrorHandle.m in Sources */,
+				97918FA81D7EAC6F00801780 /* DataListVC.m in Sources */,
 				97E304561D790C47005C398A /* AFURLConnectionOperation.m in Sources */,
 				97E304551D790C47005C398A /* AFSecurityPolicy.m in Sources */,
 				97E304611D790C47005C398A /* UIProgressView+AFNetworking.m in Sources */,
 				97E304511D790C47005C398A /* AFHTTPRequestOperation.m in Sources */,
 				99BA40D41D7ACD6B00CD3C24 /* SignupVC.m in Sources */,
 				97918F8D1D7E6ED600801780 /* ChannelListVC.m in Sources */,
+				97918FAB1D7EB58B00801780 /* FollowListVC.m in Sources */,
 				97E304591D790C47005C398A /* AFURLSessionManager.m in Sources */,
 				99BA40D11D7AC15900CD3C24 /* AWTextField.m in Sources */,
 				97E305001D7925C0005C398A /* NSDataAdditions.m in Sources */,
@@ -1126,12 +1175,14 @@
 				99BA41241D7D955200CD3C24 /* User.m in Sources */,
 				99BA40DB1D7ACDC500CD3C24 /* SettingsVC.m in Sources */,
 				99BA40CD1D7AB82200CD3C24 /* LoginVC.m in Sources */,
+				97918FB51D7EB7DE00801780 /* ShareCell.m in Sources */,
 				99BA412A1D7D998200CD3C24 /* UserService.m in Sources */,
 				97E3045D1D790C47005C398A /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				97E304981D790C89005C398A /* APIEntityReformer.m in Sources */,
 				99BA41181D7C107E00CD3C24 /* SpinnerView.m in Sources */,
 				97E305771D795DA7005C398A /* ModuleGridView.m in Sources */,
 				97918F931D7E6EFB00801780 /* AdListVC.m in Sources */,
+				97918FAE1D7EB5AE00801780 /* ShareFriendsListVC.m in Sources */,
 				97E3049A1D790C89005C398A /* APIFileParam.m in Sources */,
 				97918F9C1D7E6F2700801780 /* ShopVC.m in Sources */,
 				97918FA21D7E6F3C00801780 /* HelpVC.m in Sources */,
@@ -1160,6 +1211,7 @@
 				97E303F11D7904CC005C398A /* AppDelegate.m in Sources */,
 				97E3045E1D790C47005C398A /* UIAlertView+AFNetworking.m in Sources */,
 				97E304531D790C47005C398A /* AFHTTPSessionManager.m in Sources */,
+				97918FA51D7EA38900801780 /* ChannelCell.m in Sources */,
 				99BA411E1D7C162900CD3C24 /* AWCustomButton.m in Sources */,
 				97E305031D7925C0005C398A /* NSStringAdditions.m in Sources */,
 				97918F991D7E6F1400801780 /* EarnVC.m in Sources */,

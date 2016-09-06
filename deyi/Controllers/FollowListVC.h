@@ -1,5 +1,5 @@
 //
-//  ChannelListVC.h
+//  FollowListVC.h
 //  deyi
 //
 //  Created by tangwei1 on 16/9/6.
@@ -8,6 +8,6 @@
 
 #import "DataListVC.h"
 
-@interface ChannelListVC : DataListVC
+@interface FollowListVC : DataListVC
 
 @end

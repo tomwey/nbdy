@@ -7,7 +7,35 @@
 //
 
 #import "ChannelListVC.h"
+#import "Defines.h"
+
+@interface ChannelListVC ()
+
+@end
 
 @implementation ChannelListVC
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.tableView.rowHeight = 60;
+
+}
+
+- (NSString *)apiName
+{
+    return API_V1_CHANNELS_LIST;
+}
+
+- (NSDictionary *)apiParams
+{
+    return @{ @"os_type" : @(1) };
+}
+
+- (AWTableViewDataSource *)tableDataSource
+{
+    return AWTableViewDataSourceCreate(nil, @"ChannelCell", @"cell.id");
+}
 
 @end

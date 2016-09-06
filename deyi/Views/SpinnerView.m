@@ -11,6 +11,10 @@
 
 @interface SpinnerView ()
 
+@property (nonatomic, strong) UIView *maskView;
+
+@property (nonatomic, strong) UIView *contentView;
+
 @property (nonatomic, strong) UIImageView *loadingView;
 
 @end
@@ -21,18 +25,27 @@
 {
     if ( self = [super initWithFrame:frame] ) {
         
-        self.frame = CGRectMake(0, 0, 80, 80);
+        self.frame = AWFullScreenBounds();
         
-        self.backgroundColor = [UIColor whiteColor];
+        self.maskView = [[UIView alloc] initWithFrame:self.bounds];
+        self.maskView.backgroundColor = [UIColor blackColor];
+        self.maskView.alpha = 0.25;
+        [self addSubview:self.maskView];
         
-        self.layer.cornerRadius = 8;
-        self.clipsToBounds = YES;
+        self.contentView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 88, 88)];
+        self.contentView.backgroundColor = [UIColor whiteColor];
+        self.contentView.layer.cornerRadius = 8;
+        self.contentView.clipsToBounds = YES;
+        
+        [self addSubview:self.contentView];
+        
+        self.contentView.center = CGPointMake(self.width / 2, self.height / 2);
         
         self.loadingView = AWCreateImageView(nil);
-        self.loadingView.frame = CGRectMake(0, 0, 60, 50);
-        [self addSubview:self.loadingView];
+        self.loadingView.frame = CGRectMake(0, 0, self.contentView.width * 0.58, self.contentView.width * 0.58 * 0.83);
+        [self.contentView addSubview:self.loadingView];
         
-        self.loadingView.center = CGPointMake(self.width / 2, self.height / 2);
+        self.loadingView.center = CGPointMake(self.contentView.width / 2, self.contentView.height / 2);
         
         self.loadingView.animationImages = @[
                                              [UIImage imageNamed:@"loading_1.png"],
@@ -47,16 +60,19 @@
 
 + (void)showSpinnerInView:(UIView *)parent
 {
+    UIView *superView = parent ?: AWAppWindow();
+    
     SpinnerView *spinnerView = [[SpinnerView alloc] init];
-    [parent addSubview:spinnerView];
-    
+    [superView addSubview:spinnerView];
     spinnerView.tag = 1010112;
+    spinnerView.center = CGPointMake(superView.width / 2, superView.height / 2);
     
-    spinnerView.center = CGPointMake(parent.width / 2, parent.height / 2);
+    [superView bringSubviewToFront:spinnerView];
     
-    [parent bringSubviewToFront:spinnerView];
-    
-    parent.userInteractionEnabled = NO;
+    spinnerView.maskView.alpha = 0.0;
+    [UIView animateWithDuration:.25 animations:^{
+        spinnerView.maskView.alpha = 0.25;
+    }];
     
     if ( [spinnerView.loadingView isAnimating] == NO ) {
         [spinnerView.loadingView startAnimating];
@@ -65,9 +81,9 @@
 
 + (void)hideSpinnerForView:(UIView *)parent
 {
-    parent.userInteractionEnabled = YES;
+    UIView *superView = parent ?: AWAppWindow();
     
-    SpinnerView *spinner = [parent viewWithTag:1010112];
+    SpinnerView *spinner = [superView viewWithTag:1010112];
     
     [spinner.loadingView stopAnimating];
     

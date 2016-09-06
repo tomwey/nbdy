@@ -48,6 +48,11 @@
     return user;
 }
 
+- (NSString *)currentUserAuthToken
+{
+    return [[self currentUser] token] ?: @"";
+}
+
 /**
  * 注册
  */

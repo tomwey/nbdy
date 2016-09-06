@@ -19,6 +19,11 @@
 - (User *)currentUser;
 
 /**
+ * 获取当前用户认证Token
+ */
+- (NSString *)currentUserAuthToken;
+
+/**
  * 注册
  */
 - (void)signupWithMobile:(NSString *)mobile

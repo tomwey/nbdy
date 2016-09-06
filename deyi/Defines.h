@@ -46,9 +46,14 @@
 
 #define HOME_HAIRLINE_COLOR   MAIN_BG_COLOR//AWColorFromRGB(240, 240, 242)
 
+#define API_V1_LOAD_EARNINGS       @"/earnings/stat"
+#define API_V1_LOAD_UNREAD_MESSAGE @"/messages/unread"
+
 // models
 #import "Module.h"
 #import "LocationInfo.h"
+#import "User.h"
+#import "Shipment.h"
 
 // services
 #import "ModuleService.h"

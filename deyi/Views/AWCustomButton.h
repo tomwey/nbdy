@@ -31,10 +31,13 @@
 /** 设置按钮是否选中, 默认为NO */
 @property (nonatomic, assign) BOOL selected;
 
+/** 按钮点击回调 */
+@property (nonatomic, copy) void (^clickCallback)(AWCustomButton *sender);
+
 - (instancetype)initWithTitle:(NSString *)title
               borderAttribute:(BorderAttribute *)borderAttribute;
 
-- (void)addTarget:(id)target action:(SEL)action;
+//- (void)addTarget:(id)target action:(SEL)action;
 
 @end
 

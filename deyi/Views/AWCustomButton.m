@@ -10,8 +10,8 @@
 
 @interface AWCustomButton ()
 
-@property (nonatomic, weak)   id target;
-@property (nonatomic, assign) SEL action;
+//@property (nonatomic, weak)   id target;
+//@property (nonatomic, assign) SEL action;
 
 @property (nonatomic, strong) UILabel *titleLabel;
 
@@ -44,8 +44,11 @@
 {
     self.selected = NO;
     
-    if ( [self.target respondsToSelector:self.action] ) {
-        [self.target performSelector:self.action withObject:self];
+//    if ( [self.target respondsToSelector:self.action] ) {
+//        [self.target performSelector:self.action withObject:self];
+//    }
+    if ( self.clickCallback ) {
+        self.clickCallback(self);
     }
 }
 
@@ -54,11 +57,11 @@
     self.selected = NO;
 }
 
-- (void)addTarget:(id)target action:(SEL)action
-{
-    self.target = target;
-    self.action = action;
-}
+//- (void)addTarget:(id)target action:(SEL)action
+//{
+//    self.target = target;
+//    self.action = action;
+//}
 
 - (void)setTitle:(NSString *)title
 {

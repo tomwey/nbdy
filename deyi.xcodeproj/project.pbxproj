@@ -28,7 +28,6 @@
 		97E304581D790C47005C398A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E304391D790C47005C398A /* AFURLResponseSerialization.m */; };
 		97E304591D790C47005C398A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E3043B1D790C47005C398A /* AFURLSessionManager.m */; };
 		97E3045A1D790C47005C398A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 97E3043C1D790C47005C398A /* LICENSE */; };
-		97E3045B1D790C47005C398A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 97E3043D1D790C47005C398A /* README.md */; };
 		97E3045C1D790C47005C398A /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E304401D790C47005C398A /* AFNetworkActivityIndicatorManager.m */; };
 		97E3045D1D790C47005C398A /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E304421D790C47005C398A /* UIActivityIndicatorView+AFNetworking.m */; };
 		97E3045E1D790C47005C398A /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E304441D790C47005C398A /* UIAlertView+AFNetworking.m */; };
@@ -197,7 +196,6 @@
 		97E3043A1D790C47005C398A /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		97E3043B1D790C47005C398A /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		97E3043C1D790C47005C398A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		97E3043D1D790C47005C398A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		97E3043F1D790C47005C398A /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
 		97E304401D790C47005C398A /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
 		97E304411D790C47005C398A /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
@@ -604,7 +602,6 @@
 			children = (
 				97E304281D790C47005C398A /* AFNetworking */,
 				97E3043C1D790C47005C398A /* LICENSE */,
-				97E3043D1D790C47005C398A /* README.md */,
 				97E3043E1D790C47005C398A /* UIKit+AFNetworking */,
 			);
 			path = AFNetworking;
@@ -1097,7 +1094,6 @@
 				97E304B31D7916D8005C398A /* BaseVC.m in Sources */,
 				99BA40EA1D7B0FF600CD3C24 /* AWKeyboardManager.m in Sources */,
 				99BA412E1D7DBD7600CD3C24 /* UIButton+AWButtonLoading.m in Sources */,
-				97E3045B1D790C47005C398A /* README.md in Sources */,
 				97E3057A1D795EE4005C398A /* GridView.m in Sources */,
 				97E3049C1D790C89005C398A /* APIRequest.m in Sources */,
 				97E304621D790C47005C398A /* UIRefreshControl+AFNetworking.m in Sources */,

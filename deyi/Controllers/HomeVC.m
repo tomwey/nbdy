@@ -74,6 +74,12 @@
     // 当页面可见的时候，获取位置信息
     dispatch_async(dispatch_get_main_queue(), ^{
         [self fetchLocation];
+        
+        // 加载收入信息
+        [self fetchEarnings];
+        
+        // 加载未读消息
+        [self fetchUnreadMessageCount];
     });
 }
 
@@ -128,7 +134,7 @@
         CGRect frame2 = CGRectMake(width * i, headLabel.bottom, width, 34);
 //        frame2 = CGRectInset(frame2, 15, 0);
         UILabel *earnLabel = AWCreateLabel(frame2,
-                                           @"1230",
+                                           @"--",
                                            NSTextAlignmentCenter,
                                            AWCustomFont(MAIN_DIGIT_FONT,
                                                         24),
@@ -255,6 +261,31 @@
     [self.locationService parseLocation:location completion:^(id result, NSError *error) {
         [me handleLocationParse:result error:error];
     }];
+}
+
+- (void)fetchEarnings
+{
+    [SpinnerView showSpinnerInView:nil];
+    [self.loadEarnsService GET:API_V1_LOAD_EARNINGS
+                        params:@{ @"token": [[UserService sharedInstance] currentUserAuthToken] }
+                    completion:^(id result, NSError *error) {
+                        NSLog(@"result: %@", result);
+                        [SpinnerView hideSpinnerForView:nil];
+                        if ( !error ) {
+                            self.todayEarnLabel.text = [result[@"today"] description];
+                            self.totalEarnLabel.text = [result[@"total"] description];
+                            self.balanceLabel.text   = [result[@"balance"] description];
+                        }
+                    }];
+}
+
+- (void)fetchUnreadMessageCount
+{
+    [self.loadUnreadMessageService GET:API_V1_LOAD_UNREAD_MESSAGE
+                                params:@{ @"token": [[UserService sharedInstance] currentUserAuthToken] }
+                            completion:^(id result, NSError *error) {
+                                NSLog(@"result: %@", result);
+                            }];
 }
 
 - (void)fetchLocation

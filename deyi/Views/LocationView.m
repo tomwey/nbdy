@@ -65,9 +65,9 @@
     self.currentLocationStatus = status;
     
     NSString *text = message;
-    if ( status == LocationStatusParseError || status == LocationStatusLocateError ) {
-        text = [NSString stringWithFormat:@"%@，点击重试", message];
-    }
+//    if ( status == LocationStatusParseError || status == LocationStatusLocateError ) {
+//        text = [NSString stringWithFormat:@"%@，点击重试", message];
+//    }
     
     self.locationLabel.text = text;
     [self.locationLabel sizeToFit];

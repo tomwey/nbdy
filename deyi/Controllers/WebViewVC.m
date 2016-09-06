@@ -7,31 +7,18 @@
 //
 
 #import "WebViewVC.h"
+#import "Defines.h"
 
 @interface WebViewVC () <UIWebViewDelegate>
-
-@property (nonatomic, copy) NSString *pageTitle;
-@property (nonatomic, copy) NSString *link;
 
 @property (nonatomic, strong) UIWebView *webView;
 
 @end
 @implementation WebViewVC
 
-- (instancetype)initWithTitle:(NSString *)title link:(NSString *)link
-{
-    if ( self = [super init] ) {
-        self.pageTitle = title;
-        self.link = link;
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.title = self.pageTitle;
     
     self.webView = [[UIWebView alloc] init];
     self.webView.frame = self.contentView.bounds;
@@ -46,7 +33,7 @@
 
 - (void)loadWebView
 {
-    NSURL *url = [NSURL URLWithString:self.link];
+    NSURL *url = [NSURL URLWithString:self.params[@"link"]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
 }

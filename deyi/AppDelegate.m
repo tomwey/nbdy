@@ -37,7 +37,7 @@
     
     [self.window makeKeyAndVisible];
     
-    NSLog(@"1234567");
+    NSLog(@"1234567 -> %.04f", 3.55);
 
     return YES;
 }

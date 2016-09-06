@@ -31,7 +31,11 @@
                          @{
                              @"name" : @"收徒任务",
                              @"icon" : @"icon_home_invite.png",
-                             @"pageClassName" : @"InviteVC",
+                             @"pageClassName" : @"WebViewVC",
+                             @"params" : @{
+                                     @"title" : @"收徒",
+                                     @"link" :  @"http://dev.deyiwifi.com/shoutu/info?uid=%@",
+                                     },
                              },
                          @{
                              @"name" : @"收益明细",
@@ -51,7 +55,11 @@
                          @{
                              @"name" : @"新手攻略",
                              @"icon" : @"icon_home_help.png",
-                             @"pageClassName" : @"HelpVC",
+                             @"pageClassName" : @"WebViewVC",
+                             @"params" : @{
+                                     @"title" : @"新手攻略",
+                                     @"link" :  @"http://dev.deyiwifi.com/shoutu/info?uid=%@",
+                                     },
                              },
                          @{
                              @"name" : @"每日签到",
@@ -63,7 +71,8 @@
     for (id dict in modules) {
         Module *m = [[Module alloc] initWithName:dict[@"name"]
                                             icon:dict[@"icon"]
-                                   pageClassName:dict[@"pageClassName"]];
+                                   pageClassName:dict[@"pageClassName"]
+                                          params:dict[@"params"]];
         [temp addObject:m];
     }
     return temp;

@@ -43,4 +43,10 @@ typedef NS_ENUM(NSInteger, AWLocationError) {
  */
 - (void)stopUpdatingLocation;
 
+/** 返回当前位置的经纬度格式化字符串，格式为：经度,纬度 */
+- (NSString *)formatedCurrentLocation_1;
+
+/** 返回当前位置的经纬度格式化字符串，格式为：纬度,经度 */
+- (NSString *)formatedCurrentLocation_2;
+
 @end

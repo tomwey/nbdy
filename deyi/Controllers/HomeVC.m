@@ -30,6 +30,10 @@
 
 @property (nonatomic, strong) NetworkService  *loadUnreadMessageService;
 
+@property (nonatomic, strong) UIView *redDot;
+
+@property (nonatomic, weak) UIView *settingsButton;
+
 @end
 
 #define kSectionMargin 10
@@ -51,7 +55,7 @@
         [me fetchLocation];
     };
     
-    [self addRightBarItemWithImage:@"btn_settings.png" callback:^{
+    self.settingsButton = [self addRightBarItemWithImage:@"btn_settings.png" callback:^{
         [me gotoSettings];
     }];
     
@@ -233,7 +237,7 @@
 - (void)handleLocationParse:(id)result error:(NSError *)error
 {
     if ( error ) {
-        [self.locationView setLocationStatus:LocationStatusParseError message:@"位置解析失败"];
+        [self.locationView setLocationStatus:LocationStatusParseError message:@"点击重新定位"];
     } else {
         NSLog(@"result: %@", result);
         [self.locationView setLocationStatus:LocationStatusSuccess message:[result city]];
@@ -244,7 +248,16 @@
 {
     [[AWLocationManager sharedInstance] startUpdatingLocation:^(CLLocation *location, NSError *error) {
         if ( error ) {
-            [self.locationView setLocationStatus:LocationStatusLocateError message:error.domain];
+            [self.locationView setLocationStatus:LocationStatusLocateError message:@"点击重新定位"];
+            if ( error.code == AWLocationErrorDenied ) {
+                NSString *message = [NSString stringWithFormat:@"请到设置->隐私->定位服务中开启【%@】定位服务，以便能够准确获得您的位置信息",
+                                     [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]];
+                [[[UIAlertView alloc] initWithTitle:@"定位服务关闭"
+                                           message:message
+                                          delegate:nil
+                                 cancelButtonTitle:@"确定"
+                                 otherButtonTitles:nil] show];
+            }
         } else {
             [self.locationView setLocationStatus:LocationStatusParsing message:@"位置解析中"];
             
@@ -281,10 +294,19 @@
 
 - (void)fetchUnreadMessageCount
 {
-    [self.loadUnreadMessageService GET:API_V1_LOAD_UNREAD_MESSAGE
+    [self.loadUnreadMessageService GET:API_V1_LOAD_UNREAD_MESSAGE_COUNT
                                 params:@{ @"token": [[UserService sharedInstance] currentUserAuthToken] }
                             completion:^(id result, NSError *error) {
                                 NSLog(@"result: %@", result);
+                                if (error) {
+                                    self.redDot.hidden = YES;
+                                } else {
+                                    if ( [result[@"count"] integerValue] > 0 ) {
+                                        self.redDot.hidden = NO;
+                                    } else {
+                                        self.redDot.hidden = YES;
+                                    }
+                                }
                             }];
 }
 
@@ -332,11 +354,28 @@
     NSInteger index = gesture.view.tag;
     
     Module *m = [[self.moduleService loadModules] objectAtIndex:index];
-    
-    WebViewVC *http = [[WebViewVC alloc] initWithTitle:@"标题" link:@"https://www.baidu.com"];
-    [self.navigationController pushViewController:http animated:YES];
-    
-    NSLog(@"index: %d", index);
+    if ( m.pageClassName.length == 0 ) {
+        // 签到
+        [self gotoCheckin];
+    } else {
+        UIViewController *vc = [[AWMediator sharedInstance] openVCWithName:m.pageClassName params:m.params];
+        vc.title = m.name;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
+
+- (void)gotoCheckin
+{
+    [self.loadEarnsService POST:API_V1_CHECKIN
+                         params:@{ @"token" : [[UserService sharedInstance] currentUserAuthToken],
+                                   @"loc" : [[AWLocationManager sharedInstance] formatedCurrentLocation_1] ?: @"" }
+                     completion:^(id result, NSError *error) {
+                         if ( error ) {
+                             
+                         } else {
+                             
+                         }
+                     }];
 }
 
 - (ModuleService *)moduleService
@@ -360,6 +399,17 @@
 - (UILabel *)balanceLabel
 {
     return (UILabel *)[self.earningsSection viewWithTag:10002];
+}
+
+- (UIView *)redDot
+{
+//    if ( !_redDot ) {
+//        _redDot = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 4, 4)];
+//        _redDot.backgroundColor = MAIN_RED_COLOR;
+//        
+//        
+//    }
+    return nil;
 }
 
 - (LocationService *)locationService

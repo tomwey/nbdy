@@ -13,9 +13,11 @@
 @property (nonatomic, copy, readonly) NSString *name;
 @property (nonatomic, copy, readonly) NSString *icon;
 @property (nonatomic, copy, readonly) NSString *pageClassName;
+@property (nonatomic, copy, readonly) NSDictionary *params;
 
 - (instancetype)initWithName:(NSString *)name
                         icon:(NSString *)icon
-               pageClassName:(NSString *)className;
+               pageClassName:(NSString *)className
+                      params:(NSDictionary *)params;
 
 @end

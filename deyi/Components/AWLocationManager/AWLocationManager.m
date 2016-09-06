@@ -23,6 +23,8 @@
 
 @implementation AWLocationManager
 
+#define kLocationFormat @"%.06f,%.06f"
+
 + (AWLocationManager *)sharedInstance
 {
     static AWLocationManager *instance;
@@ -74,6 +76,26 @@
     
     [self.locationManager stopUpdatingLocation];
     self.locationManager = nil;
+}
+
+/** 返回当前位置的经纬度格式化字符串，格式为：经度,纬度 */
+- (NSString *)formatedCurrentLocation_1
+{
+    if ( self.currentLocation == nil ) return nil;
+    
+    return [NSString stringWithFormat:kLocationFormat,
+            self.currentLocation.coordinate.longitude,
+            self.currentLocation.coordinate.latitude];
+}
+
+/** 返回当前位置的经纬度格式化字符串，格式为：纬度,经度 */
+- (NSString *)formatedCurrentLocation_2
+{
+    if ( self.currentLocation == nil ) return nil;
+    
+    return [NSString stringWithFormat:kLocationFormat,
+            self.currentLocation.coordinate.latitude,
+            self.currentLocation.coordinate.longitude];
 }
 
 #pragma mark -----------------------------------------------------------

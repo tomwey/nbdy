@@ -21,6 +21,14 @@
 
 @implementation FollowCell
 
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    if ( self = [super initWithStyle:style reuseIdentifier:reuseIdentifier] ) {
+        self.selectionStyle = UITableViewCellSelectionStyleNone;
+    }
+    return self;
+}
+
 - (void)configData:(id)data
 {
     NSURL *iconURL = [NSURL URLWithString:[data valueForKey:@"icon"]];
@@ -96,7 +104,7 @@
         _introLabel = AWCreateLabel(CGRectZero,
                                    nil,
                                    NSTextAlignmentLeft,
-                                   AWCustomFont(MAIN_TEXT_FONT, 13),
+                                   AWCustomFont(MAIN_TEXT_FONT, 14),
                                    SETTINGS_GRAY_COLOR);
         [self.contentView addSubview:_introLabel];
     }
@@ -109,7 +117,7 @@
         _earnLabel = AWCreateLabel(CGRectZero,
                                    nil,
                                    NSTextAlignmentLeft,
-                                   AWCustomFont(MAIN_TEXT_FONT, 13),
+                                   AWCustomFont(MAIN_TEXT_FONT, 14),
                                    MAIN_BLACK_COLOR);
         [self.contentView addSubview:_earnLabel];
     }

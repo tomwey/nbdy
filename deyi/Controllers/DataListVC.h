@@ -25,4 +25,7 @@
 /** 是否需要分页加载 */
 - (BOOL)needPaginate;
 
+/** 某个cell或者某个grid被选中的回调方法，之类可以重写该方法 */
+- (void)didSelectItem:(id)item;
+
 @end

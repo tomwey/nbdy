@@ -33,9 +33,14 @@
 
 - (void)loadWebView
 {
-    NSURL *url = [NSURL URLWithString:self.params[@"link"]];
+    NSURL *url = [NSURL URLWithString:self.contentUrl];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [self.webView loadRequest:request];
+}
+
+- (NSString *)contentUrl
+{
+    return self.params[@"link"];
 }
 
 - (void)webViewDidStartLoad:(UIWebView *)webView

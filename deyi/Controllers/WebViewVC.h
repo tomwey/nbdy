@@ -10,4 +10,6 @@
 
 @interface WebViewVC : BaseNavBarVC
 
+- (NSString *)contentUrl;
+
 @end

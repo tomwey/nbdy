@@ -55,7 +55,7 @@
     cell.textLabel.text = self.dataSource[indexPath.row];
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
     
-    cell.textLabel.font = AWCustomFont(MAIN_TEXT_FONT, 14);
+    cell.textLabel.font = AWCustomFont(MAIN_TEXT_FONT, 16);
     cell.textLabel.textColor = MAIN_RED_COLOR;
     
     return cell;

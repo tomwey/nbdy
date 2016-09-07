@@ -35,4 +35,12 @@
     return AWTableViewDataSourceCreate(nil, @"FollowCell", @"cell.id");
 }
 
+- (void)didSelectItem:(id)item
+{
+    UIViewController *vc = [[AWMediator sharedInstance] openVCWithName:@"WebViewVC"
+                                                                params:@{ @"link" : [item valueForKey:@"link"] ?: @"" }];
+    vc.title = @"任务详情";
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 @end

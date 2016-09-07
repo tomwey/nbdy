@@ -107,4 +107,16 @@
     return _loadDataService;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    id item = [self.inTableDataSource.dataSource objectAtIndex:indexPath.row];
+    [self didSelectItem:item];
+}
+
+- (void)didSelectItem:(id)item
+{
+    NSLog(@"selected item: %@", item);
+}
+
 @end

@@ -22,6 +22,12 @@
                                                          diskCapacity:100 * 1024 * 1024
                                                              diskPath:@"Images"];
     [NSURLCache setSharedURLCache:urlCache];
+    
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        NSLog(@"network status: %d", status);
+    }];
+    
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -46,10 +52,29 @@
     
     [self.window makeKeyAndVisible];
     
+//    [self deterNetworkType];
+    
     NSLog(@"1234567 -> %.04f", 3.55);
 
     return YES;
 }
+
+//- (void)deterNetworkType
+//{
+//    UIApplication *app = [UIApplication sharedApplication];
+//    NSArray *subviews = [[[app valueForKey:@"statusBar"] valueForKey:@"foregroundView"] subviews];
+//    NSNumber *dataNetworkItemView = nil;
+//    
+//    for (id subview in subviews) {
+//        if([subview isKindOfClass:[NSClassFromString(@"UIStatusBarDataNetworkItemView") class]]) {
+//            dataNetworkItemView = subview;
+//            break;
+//        }
+//    }
+//
+//    NSNumber *type = [dataNetworkItemView valueForKey:@"dataNetworkType"];
+//    NSLog(@"type: %@, %@", type, [[AWNetworkManager sharedInstance] currentNetworkType]);
+//}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

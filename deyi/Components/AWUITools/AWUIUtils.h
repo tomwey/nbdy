@@ -24,6 +24,11 @@ NSString* AWOSVersionString();
 NSString* AWDeviceName();
 
 /**
+ * 获取国家语言码, 例如：zh_CN, en_US
+ */
+NSString *AWDeviceCountryLangCode();
+
+/**
  * 获取设备分辨率字符串
  * 例如：1536x2048
  */

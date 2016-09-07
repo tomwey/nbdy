@@ -35,6 +35,7 @@
 
 #import "AWButtonLoading.h"
 
+#import "AFNetworking.h"
 #import "UIImageView+AFNetworking.h"
 
 #define MAIN_TEXT_FONT      @"FZY1JW--GB1-0"
@@ -51,6 +52,12 @@
 
 #define HOME_HAIRLINE_COLOR   MAIN_BG_COLOR//AWColorFromRGB(240, 240, 242)
 
+#if DEBUG
+#define API_KEY @"e96afa193093bf5760b6edf265544117"
+#else
+#define API_KEY @""
+#endif
+
 #define API_V1_LOAD_EARNINGS             @"/earnings/stat"
 #define API_V1_LOAD_UNREAD_MESSAGE_COUNT @"/messages/unread_count"
 #define API_V1_CHECKIN                   @"/checkins"
@@ -58,6 +65,9 @@
 #define API_V1_FOLLOW_LIST               @"/follow_tasks/list"
 #define API_V1_SHARE_LIST                @"/share_tasks/list"
 #define API_V1_AD_LIST                   @"/ad_tasks/nearby"
+#define API_V1_AD_VIEW                   @"/ad_tasks/view"
+
+#import "ParamsUtil.h"
 
 // models
 #import "Module.h"

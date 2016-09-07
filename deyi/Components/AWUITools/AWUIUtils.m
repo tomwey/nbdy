@@ -33,6 +33,14 @@ NSString* AWDeviceName()
     return machine;
 }
 
+NSString *AWDeviceCountryLangCode()
+{
+    NSLocale *currentLocale = [NSLocale currentLocale];  // get the current locale.
+    NSString *countryCode = [currentLocale objectForKey:NSLocaleCountryCode];
+    NSString *languageCode = [currentLocale objectForKey:NSLocaleLanguageCode];
+    return [NSString stringWithFormat:@"%@_%@", languageCode ?: @"zh", countryCode ?: @"CN"];
+}
+
 NSString* AWDeviceSizeString()
 {
     CGFloat scale = [[UIScreen mainScreen] scale];

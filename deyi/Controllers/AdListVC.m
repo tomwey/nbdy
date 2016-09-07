@@ -48,7 +48,20 @@
 /** 某个cell或者某个grid被选中的回调方法，之类可以重写该方法 */
 - (void)didSelectItem:(id)item
 {
+    NSLog(@"item: %@", item);
+    UIViewController *vc = nil;
+    NSInteger adType = [[item valueForKey:@"ad_type"] integerValue];
+    if ( adType == 2 ) {
+        // 网页广告
+        vc = [[AWMediator sharedInstance] openVCWithName:@"AdHTMLDetailVC" params:@{ @"item": item }];
+    } else if ( adType == 1 ) {
+        // 图片广告
+        vc = [[AWMediator sharedInstance] openVCWithName:@"AdImagesDetailVC" params:@{ @"item": item }];
+    }
     
+    if ( vc ) {
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
 @end

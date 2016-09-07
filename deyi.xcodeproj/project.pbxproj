@@ -27,6 +27,9 @@
 		97918FB51D7EB7DE00801780 /* ShareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FB41D7EB7DE00801780 /* ShareCell.m */; };
 		97918FBD1D7FB24900801780 /* ShareDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FBC1D7FB24900801780 /* ShareDetailVC.m */; };
 		97918FC01D7FB7BB00801780 /* AdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FBF1D7FB7BB00801780 /* AdCell.m */; };
+		97918FC41D7FEC8100801780 /* AdHTMLDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FC31D7FEC8100801780 /* AdHTMLDetailVC.m */; };
+		97918FC71D7FED5400801780 /* AdImagesDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FC61D7FED5400801780 /* AdImagesDetailVC.m */; };
+		97918FCB1D7FF48B00801780 /* ParamsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FCA1D7FF48B00801780 /* ParamsUtil.m */; };
 		97E303EE1D7904CC005C398A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303ED1D7904CC005C398A /* main.m */; };
 		97E303F11D7904CC005C398A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303F01D7904CC005C398A /* AppDelegate.m */; };
 		97E304211D7909E3005C398A /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E3041C1D7909E3005C398A /* Default-375w-667h@2x.png */; };
@@ -214,6 +217,12 @@
 		97918FBC1D7FB24900801780 /* ShareDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareDetailVC.m; sourceTree = "<group>"; };
 		97918FBE1D7FB7BB00801780 /* AdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdCell.h; sourceTree = "<group>"; };
 		97918FBF1D7FB7BB00801780 /* AdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdCell.m; sourceTree = "<group>"; };
+		97918FC21D7FEC8100801780 /* AdHTMLDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdHTMLDetailVC.h; sourceTree = "<group>"; };
+		97918FC31D7FEC8100801780 /* AdHTMLDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdHTMLDetailVC.m; sourceTree = "<group>"; };
+		97918FC51D7FED5400801780 /* AdImagesDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdImagesDetailVC.h; sourceTree = "<group>"; };
+		97918FC61D7FED5400801780 /* AdImagesDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdImagesDetailVC.m; sourceTree = "<group>"; };
+		97918FC91D7FF48B00801780 /* ParamsUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParamsUtil.h; sourceTree = "<group>"; };
+		97918FCA1D7FF48B00801780 /* ParamsUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParamsUtil.m; sourceTree = "<group>"; };
 		97E303E91D7904CC005C398A /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E303ED1D7904CC005C398A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97E303EF1D7904CC005C398A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -490,6 +499,28 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		97918FC11D7FEC4400801780 /* AdTask */ = {
+			isa = PBXGroup;
+			children = (
+				97918F911D7E6EFB00801780 /* AdListVC.h */,
+				97918F921D7E6EFB00801780 /* AdListVC.m */,
+				97918FC21D7FEC8100801780 /* AdHTMLDetailVC.h */,
+				97918FC31D7FEC8100801780 /* AdHTMLDetailVC.m */,
+				97918FC51D7FED5400801780 /* AdImagesDetailVC.h */,
+				97918FC61D7FED5400801780 /* AdImagesDetailVC.m */,
+			);
+			name = AdTask;
+			sourceTree = "<group>";
+		};
+		97918FC81D7FF47200801780 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				97918FC91D7FF48B00801780 /* ParamsUtil.h */,
+				97918FCA1D7FF48B00801780 /* ParamsUtil.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		97E303E01D7904CC005C398A = {
 			isa = PBXGroup;
 			children = (
@@ -511,6 +542,7 @@
 			children = (
 				97E304261D790BF5005C398A /* External */,
 				97E304031D7905EF005C398A /* Components */,
+				97918FC81D7FF47200801780 /* Utils */,
 				97E3040D1D7905EF005C398A /* Services */,
 				97E304051D7905EF005C398A /* Models */,
 				97E3040E1D7905EF005C398A /* Views */,
@@ -557,6 +589,7 @@
 		97E304041D7905EF005C398A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				97918FC11D7FEC4400801780 /* AdTask */,
 				97918FAF1D7EB5EF00801780 /* ShareTask */,
 				99BA40D81D7ACDA500CD3C24 /* User */,
 				97E304B11D7916D8005C398A /* BaseVC.h */,
@@ -571,8 +604,6 @@
 				97E3057F1D796870005C398A /* WebViewVC.m */,
 				97918F8B1D7E6ED600801780 /* ChannelListVC.h */,
 				97918F8C1D7E6ED600801780 /* ChannelListVC.m */,
-				97918F911D7E6EFB00801780 /* AdListVC.h */,
-				97918F921D7E6EFB00801780 /* AdListVC.m */,
 				97918F941D7E6F0A00801780 /* InviteVC.h */,
 				97918F951D7E6F0A00801780 /* InviteVC.m */,
 				97918F971D7E6F1400801780 /* EarnVC.h */,
@@ -1164,6 +1195,7 @@
 				99BA40E31D7AD36B00CD3C24 /* AWMediator.m in Sources */,
 				97E304A61D790C89005C398A /* UITableView+RemoveBlankCells.m in Sources */,
 				97918D931D7D57E400801780 /* LocationInfo.m in Sources */,
+				97918FC41D7FEC8100801780 /* AdHTMLDetailVC.m in Sources */,
 				97E3049E1D790C89005C398A /* UIView+AWGeometry.m in Sources */,
 				97E304A41D790C89005C398A /* UITableView+LoadEmptyOrErrorHandle.m in Sources */,
 				97918FA81D7EAC6F00801780 /* DataListVC.m in Sources */,
@@ -1235,10 +1267,12 @@
 				97E3049F1D790C89005C398A /* AWRefreshBaseView.m in Sources */,
 				99BA40D71D7ACD9B00CD3C24 /* PasswordVC.m in Sources */,
 				97E304B61D7916F3005C398A /* BaseNavBarVC.m in Sources */,
+				97918FCB1D7FF48B00801780 /* ParamsUtil.m in Sources */,
 				97E305831D796B6A005C398A /* LoadingView.m in Sources */,
 				97918D8D1D7D146300801780 /* LocationView.m in Sources */,
 				97918FBD1D7FB24900801780 /* ShareDetailVC.m in Sources */,
 				97E3049D1D790C89005C398A /* CustomNavBar.m in Sources */,
+				97918FC71D7FED5400801780 /* AdImagesDetailVC.m in Sources */,
 				97E303EE1D7904CC005C398A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

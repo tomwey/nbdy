@@ -14,6 +14,9 @@
 
 - (void)configData:(id)data;
 
+@optional
++ (CGFloat)cellHeight;
+
 @end
 
 #endif /* AWTableDataConfig_h */

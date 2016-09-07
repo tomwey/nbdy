@@ -17,7 +17,10 @@
     
     self.title = @"关注公众号";
     
-    self.tableView.rowHeight = 90;
+    self.tableView.rowHeight = 100;
+    
+    // 设置分割线
+    [self.tableView removeCompatibility];
 }
 
 - (NSString *)apiName
@@ -39,7 +42,7 @@
 {
     UIViewController *vc = [[AWMediator sharedInstance] openVCWithName:@"WebViewVC"
                                                                 params:@{ @"link" : [item valueForKey:@"link"] ?: @"" }];
-    vc.title = @"任务详情";
+    vc.title = [NSString stringWithFormat:@"关注%@", [item valueForKey:@"gzh_name"]];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

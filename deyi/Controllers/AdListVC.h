@@ -6,8 +6,8 @@
 //  Copyright © 2016年 tangwei1. All rights reserved.
 //
 
-#import "BaseNavBarVC.h"
+#import "DataListVC.h"
 
-@interface AdListVC : BaseNavBarVC
+@interface AdListVC : DataListVC
 
 @end

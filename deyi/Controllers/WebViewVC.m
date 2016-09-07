@@ -45,8 +45,9 @@
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
+    __weak typeof(self) me = self;
     [self startLoading:^{
-        [self loadWebView];
+        [me loadWebView];
     }];
 }
 

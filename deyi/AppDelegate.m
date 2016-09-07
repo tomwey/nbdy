@@ -15,6 +15,15 @@
 
 @implementation AppDelegate
 
++ (void)load
+{
+    // 设置缓存大小
+    NSURLCache *urlCache = [[NSURLCache alloc] initWithMemoryCapacity:20 * 1024 * 1024
+                                                         diskCapacity:100 * 1024 * 1024
+                                                             diskPath:@"Images"];
+    [NSURLCache setSharedURLCache:urlCache];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     [[UIApplication sharedApplication] setStatusBarHidden:NO];

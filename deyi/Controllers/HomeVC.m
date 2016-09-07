@@ -75,16 +75,26 @@
     // 初始化功能区域
     [self initModuleSection];
     
-    // 当页面可见的时候，获取位置信息
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(loadInfo)
+                                                 name:UIApplicationWillEnterForegroundNotification
+                                               object:nil];
+    
     dispatch_async(dispatch_get_main_queue(), ^{
-        [self fetchLocation];
-        
-        // 加载收入信息
-        [self fetchEarnings];
-        
-        // 加载未读消息
-        [self fetchUnreadMessageCount];
+        [self loadInfo];
     });
+}
+
+- (void)loadInfo
+{
+    // 获取位置信息
+    [self fetchLocation];
+    
+    // 加载收入信息
+    [self fetchEarnings];
+    
+    // 加载未读消息
+    [self fetchUnreadMessageCount];
 }
 
 - (void)initWIFISection

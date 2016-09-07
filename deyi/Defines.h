@@ -40,6 +40,9 @@
 #define MAIN_TEXT_FONT      @"FZY1JW--GB1-0"
 #define MAIN_DIGIT_FONT     @"CircularAirPro-Light"
 
+#define IOS_DEFAULT_NAVBAR_BOTTOM_LINE_COLOR  AWColorFromRGB(163, 164, 165)
+#define IOS_DEFAULT_CELL_SEPARATOR_LINE_COLOR AWColorFromRGB(187, 188, 193)
+
 #define MAIN_BG_COLOR         AWColorFromRGB(239, 239, 244)
 #define MAIN_RED_COLOR        AWColorFromRGB(220, 0,   27)
 #define MAIN_BLACK_COLOR      AWColorFromRGB(0,   0,   0)
@@ -54,6 +57,7 @@
 #define API_V1_CHANNELS_LIST             @"/channels/list"
 #define API_V1_FOLLOW_LIST               @"/follow_tasks/list"
 #define API_V1_SHARE_LIST                @"/share_tasks/list"
+#define API_V1_AD_LIST                   @"/ad_tasks/nearby"
 
 // models
 #import "Module.h"

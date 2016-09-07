@@ -36,6 +36,8 @@
     // 默认设置表视图的行高为50
     self.tableView.rowHeight = 50;
     
+    self.tableView.showsVerticalScrollIndicator = NO;
+    
     // 从子类获取数据源
     self.inTableDataSource = self.tableDataSource;
     
@@ -80,7 +82,7 @@
     }];
     [self.loadDataService GET:uri params:params completion:^(id result, NSError *error) {
         if ( error ) {
-            
+            [me finishLoading:LoadingStateFail];
         } else {
             id data = result[@"data"];
             if ( [data isKindOfClass:[NSDictionary class]] ) {

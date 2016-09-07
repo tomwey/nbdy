@@ -25,6 +25,8 @@
 		97918FAE1D7EB5AE00801780 /* ShareFriendsListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FAD1D7EB5AE00801780 /* ShareFriendsListVC.m */; };
 		97918FB21D7EB7D300801780 /* FollowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FB11D7EB7D300801780 /* FollowCell.m */; };
 		97918FB51D7EB7DE00801780 /* ShareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FB41D7EB7DE00801780 /* ShareCell.m */; };
+		97918FBD1D7FB24900801780 /* ShareDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FBC1D7FB24900801780 /* ShareDetailVC.m */; };
+		97918FC01D7FB7BB00801780 /* AdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FBF1D7FB7BB00801780 /* AdCell.m */; };
 		97E303EE1D7904CC005C398A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303ED1D7904CC005C398A /* main.m */; };
 		97E303F11D7904CC005C398A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303F01D7904CC005C398A /* AppDelegate.m */; };
 		97E304211D7909E3005C398A /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E3041C1D7909E3005C398A /* Default-375w-667h@2x.png */; };
@@ -208,6 +210,10 @@
 		97918FB11D7EB7D300801780 /* FollowCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FollowCell.m; sourceTree = "<group>"; };
 		97918FB31D7EB7DE00801780 /* ShareCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareCell.h; sourceTree = "<group>"; };
 		97918FB41D7EB7DE00801780 /* ShareCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareCell.m; sourceTree = "<group>"; };
+		97918FBB1D7FB24900801780 /* ShareDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareDetailVC.h; sourceTree = "<group>"; };
+		97918FBC1D7FB24900801780 /* ShareDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareDetailVC.m; sourceTree = "<group>"; };
+		97918FBE1D7FB7BB00801780 /* AdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdCell.h; sourceTree = "<group>"; };
+		97918FBF1D7FB7BB00801780 /* AdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdCell.m; sourceTree = "<group>"; };
 		97E303E91D7904CC005C398A /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E303ED1D7904CC005C398A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97E303EF1D7904CC005C398A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -463,6 +469,8 @@
 				97918FAA1D7EB58B00801780 /* FollowListVC.m */,
 				97918FAC1D7EB5AE00801780 /* ShareFriendsListVC.h */,
 				97918FAD1D7EB5AE00801780 /* ShareFriendsListVC.m */,
+				97918FBB1D7FB24900801780 /* ShareDetailVC.h */,
+				97918FBC1D7FB24900801780 /* ShareDetailVC.m */,
 			);
 			name = ShareTask;
 			sourceTree = "<group>";
@@ -476,6 +484,8 @@
 				97918FB11D7EB7D300801780 /* FollowCell.m */,
 				97918FB31D7EB7DE00801780 /* ShareCell.h */,
 				97918FB41D7EB7DE00801780 /* ShareCell.m */,
+				97918FBE1D7FB7BB00801780 /* AdCell.h */,
+				97918FBF1D7FB7BB00801780 /* AdCell.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -1163,6 +1173,7 @@
 				97E304511D790C47005C398A /* AFHTTPRequestOperation.m in Sources */,
 				99BA40D41D7ACD6B00CD3C24 /* SignupVC.m in Sources */,
 				97918F8D1D7E6ED600801780 /* ChannelListVC.m in Sources */,
+				97918FC01D7FB7BB00801780 /* AdCell.m in Sources */,
 				97918FAB1D7EB58B00801780 /* FollowListVC.m in Sources */,
 				97E304591D790C47005C398A /* AFURLSessionManager.m in Sources */,
 				99BA40D11D7AC15900CD3C24 /* AWTextField.m in Sources */,
@@ -1226,6 +1237,7 @@
 				97E304B61D7916F3005C398A /* BaseNavBarVC.m in Sources */,
 				97E305831D796B6A005C398A /* LoadingView.m in Sources */,
 				97918D8D1D7D146300801780 /* LocationView.m in Sources */,
+				97918FBD1D7FB24900801780 /* ShareDetailVC.m in Sources */,
 				97E3049D1D790C89005C398A /* CustomNavBar.m in Sources */,
 				97E303EE1D7904CC005C398A /* main.m in Sources */,
 			);

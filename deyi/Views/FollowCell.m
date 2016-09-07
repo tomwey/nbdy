@@ -81,6 +81,8 @@
         [self.contentView addSubview:_iconView];
         _iconView.backgroundColor = HOME_HAIRLINE_COLOR;
         _iconView.frame = CGRectMake(0, 0, 70, 70);
+        _iconView.cornerRadius = _iconView.height / 2;
+        _iconView.clipsToBounds = YES;
     }
     return _iconView;
 }

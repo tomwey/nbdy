@@ -17,7 +17,10 @@
     
     self.title = @"分享朋友圈";
     
-    self.tableView.rowHeight = 88;
+    self.tableView.rowHeight = 124;
+    
+    // 设置分割线
+    [self.tableView removeCompatibility];
 }
 
 - (NSString *)apiName
@@ -33,6 +36,13 @@
 - (AWTableViewDataSource *)tableDataSource
 {
     return AWTableViewDataSourceCreate(nil, @"ShareCell", @"cell.id");
+}
+
+- (void)didSelectItem:(id)item
+{
+    UIViewController *vc = [[AWMediator sharedInstance] openVCWithName:@"ShareDetailVC"
+                                                                params:@{ @"item" : item ?: @{} }];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

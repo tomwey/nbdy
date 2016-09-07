@@ -31,7 +31,20 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-//    [self.dataService POST:API_V1_AD_VIEW params:<#(NSDictionary *)#> completion:<#^(id result, NSError *error)completion#>]
+    [self finishLoading:LoadingStateSuccessResult];
+    
+    NSMutableDictionary *params = [APIDeviceParams() mutableCopy];
+    [params setObject:[[UserService sharedInstance] currentUserAuthToken] forKey:@"token"];
+    [params setObject:self.params[@"item"][@"id"] ?: @"0" forKey:@"ad_id"];
+    [params setObject:[[AWLocationManager sharedInstance] formatedCurrentLocation_1] forKey:@"loc"];
+    
+    [self.dataService POST:API_V1_AD_VIEW params:params completion:^(id result, NSError *error) {
+        if ( !error ) {
+            NSLog(@"成功浏览广告");
+        } else {
+            NSLog(@"失败浏览广告");
+        }
+    }];
 }
 
 - (NetworkService *)dataService

@@ -378,14 +378,18 @@
 
 - (void)gotoCheckin
 {
+    [SpinnerView showSpinnerInView:nil];
+    
     [self.loadEarnsService POST:API_V1_CHECKIN
                          params:@{ @"token" : [[UserService sharedInstance] currentUserAuthToken],
                                    @"loc" : [[AWLocationManager sharedInstance] formatedCurrentLocation_1] ?: @"" }
                      completion:^(id result, NSError *error) {
+                         [SpinnerView hideSpinnerForView:nil];
+                         
                          if ( error ) {
-                             
+                             [FailureMessagePanel showWithTitle:@"签到" message:@"签到失败了！" footerButtonTitle:@"请重试"];
                          } else {
-                             
+                             [SuccessMessagePanel showWithTitle:@"签到" taskName:@"签到" earn:150];
                          }
                      }];
 }

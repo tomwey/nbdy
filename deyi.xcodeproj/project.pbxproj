@@ -33,6 +33,9 @@
 		97918FDB1D80160700801780 /* MACircleProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FD81D80160700801780 /* MACircleProgressIndicator.m */; };
 		97918FDC1D80160700801780 /* UIImageView+ProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FDA1D80160700801780 /* UIImageView+ProgressIndicator.m */; };
 		97918FDF1D80EF7A00801780 /* UIImageView+AWProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FDE1D80EF7A00801780 /* UIImageView+AWProgress.m */; };
+		97918FE31D8103E400801780 /* MessagePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FE21D8103E400801780 /* MessagePanel.m */; };
+		97918FE61D810B2200801780 /* SuccessMessagePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FE51D810B2200801780 /* SuccessMessagePanel.m */; };
+		97918FE91D810B3500801780 /* FailureMessagePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FE81D810B3500801780 /* FailureMessagePanel.m */; };
 		97E303EE1D7904CC005C398A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303ED1D7904CC005C398A /* main.m */; };
 		97E303F11D7904CC005C398A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303F01D7904CC005C398A /* AppDelegate.m */; };
 		97E304211D7909E3005C398A /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E3041C1D7909E3005C398A /* Default-375w-667h@2x.png */; };
@@ -233,6 +236,12 @@
 		97918FDD1D80EF7A00801780 /* UIImageView+AWProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AWProgress.h"; sourceTree = "<group>"; };
 		97918FDE1D80EF7A00801780 /* UIImageView+AWProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AWProgress.m"; sourceTree = "<group>"; };
 		97918FE01D80F2BA00801780 /* AWUIImageViewProgressIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWUIImageViewProgressIndicator.h; sourceTree = "<group>"; };
+		97918FE11D8103E400801780 /* MessagePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePanel.h; sourceTree = "<group>"; };
+		97918FE21D8103E400801780 /* MessagePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagePanel.m; sourceTree = "<group>"; };
+		97918FE41D810B2200801780 /* SuccessMessagePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuccessMessagePanel.h; sourceTree = "<group>"; };
+		97918FE51D810B2200801780 /* SuccessMessagePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuccessMessagePanel.m; sourceTree = "<group>"; };
+		97918FE71D810B3500801780 /* FailureMessagePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailureMessagePanel.h; sourceTree = "<group>"; };
+		97918FE81D810B3500801780 /* FailureMessagePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailureMessagePanel.m; sourceTree = "<group>"; };
 		97E303E91D7904CC005C398A /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E303ED1D7904CC005C398A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97E303EF1D7904CC005C398A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -737,6 +746,12 @@
 				99BA411D1D7C162900CD3C24 /* AWCustomButton.m */,
 				97918D8B1D7D146300801780 /* LocationView.h */,
 				97918D8C1D7D146300801780 /* LocationView.m */,
+				97918FE11D8103E400801780 /* MessagePanel.h */,
+				97918FE21D8103E400801780 /* MessagePanel.m */,
+				97918FE41D810B2200801780 /* SuccessMessagePanel.h */,
+				97918FE51D810B2200801780 /* SuccessMessagePanel.m */,
+				97918FE71D810B3500801780 /* FailureMessagePanel.h */,
+				97918FE81D810B3500801780 /* FailureMessagePanel.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1221,8 +1236,10 @@
 				97E304A61D790C89005C398A /* UITableView+RemoveBlankCells.m in Sources */,
 				97918D931D7D57E400801780 /* LocationInfo.m in Sources */,
 				97918FDB1D80160700801780 /* MACircleProgressIndicator.m in Sources */,
+				97918FE31D8103E400801780 /* MessagePanel.m in Sources */,
 				97918FC41D7FEC8100801780 /* AdHTMLDetailVC.m in Sources */,
 				97E3049E1D790C89005C398A /* UIView+AWGeometry.m in Sources */,
+				97918FE91D810B3500801780 /* FailureMessagePanel.m in Sources */,
 				97E304A41D790C89005C398A /* UITableView+LoadEmptyOrErrorHandle.m in Sources */,
 				97918FA81D7EAC6F00801780 /* DataListVC.m in Sources */,
 				97E304561D790C47005C398A /* AFURLConnectionOperation.m in Sources */,
@@ -1250,6 +1267,7 @@
 				97E304981D790C89005C398A /* APIEntityReformer.m in Sources */,
 				99BA41181D7C107E00CD3C24 /* SpinnerView.m in Sources */,
 				97E305771D795DA7005C398A /* ModuleGridView.m in Sources */,
+				97918FE61D810B2200801780 /* SuccessMessagePanel.m in Sources */,
 				97918F931D7E6EFB00801780 /* AdListVC.m in Sources */,
 				97918FAE1D7EB5AE00801780 /* ShareFriendsListVC.m in Sources */,
 				97918FDC1D80160700801780 /* UIImageView+ProgressIndicator.m in Sources */,

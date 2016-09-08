@@ -88,6 +88,9 @@
 #import "SpinnerView.h"
 #import "AWCustomButton.h"
 #import "LocationView.h"
+#import "MessagePanel.h"
+#import "SuccessMessagePanel.h"
+#import "FailureMessagePanel.h"
 
 // controllers
 #import "WebViewVC.h"

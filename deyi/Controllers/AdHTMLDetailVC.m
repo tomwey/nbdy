@@ -40,9 +40,12 @@
     
     [self.dataService POST:API_V1_AD_VIEW params:params completion:^(id result, NSError *error) {
         if ( !error ) {
-            NSLog(@"成功浏览广告");
+//            NSLog(@"成功浏览广告");
+            NSInteger earn = [self.params[@"item"][@"price"] intValue];
+            [SuccessMessagePanel showWithTitle:@"广告任务" taskName:@"浏览商家广告" earn:earn];
         } else {
             NSLog(@"失败浏览广告");
+            [FailureMessagePanel showWithTitle:@"广告任务" message:@"浏览商家广告失败" footerButtonTitle:@"确定"];
         }
     }];
 }

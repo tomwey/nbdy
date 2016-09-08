@@ -6,8 +6,8 @@
 //  Copyright © 2016年 tangwei1. All rights reserved.
 //
 
-#import "BaseNavBarVC.h"
+#import "WebViewVC.h"
 
-@interface HelpVC : BaseNavBarVC
+@interface HelpVC : WebViewVC
 
 @end

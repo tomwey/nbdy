@@ -22,8 +22,8 @@
 
 + (void)load
 {
-    [APIConfig sharedInstance].stageServer = @"http://dev.deyiwifi.com/api/v1";
-    [APIConfig sharedInstance].productionServer = @"http://deyiwifi.com/api/v1";
+    [APIConfig sharedInstance].stageServer = [NSString stringWithFormat:@"%@/api/v1", SERVER_HOST];
+    [APIConfig sharedInstance].productionServer = [NSString stringWithFormat:@"%@/api/v1", SERVER_HOST];
     
 #if DEBUG
     [[APIConfig sharedInstance] setDebugMode:YES];

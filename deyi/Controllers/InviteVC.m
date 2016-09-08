@@ -7,7 +7,14 @@
 //
 
 #import "InviteVC.h"
+#import "Defines.h"
 
 @implementation InviteVC
+
+- (NSString *)contentUrl
+{
+    return [NSString stringWithFormat:@"%@/shoutu/info?uid=%@", SERVER_HOST,
+            [[UserService sharedInstance] currentUser].uid];
+}
 
 @end

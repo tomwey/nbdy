@@ -56,8 +56,10 @@
 
 #if DEBUG
 #define API_KEY @"e96afa193093bf5760b6edf265544117"
+#define SERVER_HOST @"http://dev.deyiwifi.com"
 #else
 #define API_KEY @""
+#define SERVER_HOST @"http://deyiwifi.com"
 #endif
 
 #define API_V1_LOAD_EARNINGS             @"/earnings/stat"

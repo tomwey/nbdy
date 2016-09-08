@@ -31,11 +31,7 @@
                          @{
                              @"name" : @"收徒任务",
                              @"icon" : @"icon_home_invite.png",
-                             @"pageClassName" : @"WebViewVC",
-                             @"params" : @{
-                                     @"title" : @"收徒",
-                                     @"link" :  @"http://dev.deyiwifi.com/shoutu/info?uid=%@",
-                                     },
+                             @"pageClassName" : @"InviteVC",
                              },
                          @{
                              @"name" : @"收益明细",
@@ -55,11 +51,7 @@
                          @{
                              @"name" : @"新手攻略",
                              @"icon" : @"icon_home_help.png",
-                             @"pageClassName" : @"WebViewVC",
-                             @"params" : @{
-                                     @"title" : @"新手攻略",
-                                     @"link" :  @"http://dev.deyiwifi.com/shoutu/info?uid=%@",
-                                     },
+                             @"pageClassName" : @"HelpVC",
                              },
                          @{
                              @"name" : @"每日签到",

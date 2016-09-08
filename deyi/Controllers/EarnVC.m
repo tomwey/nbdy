@@ -86,6 +86,17 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    id obj = self.dataSource[indexPath.row];
+    
+    UIViewController *vc = [[AWMediator sharedInstance] openVCWithName:@"EarnDetailVC" params:@{ @"item": obj ?: @{} }];
+    vc.title = obj[@"task_name"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 - (void)loadData
 {
     __weak typeof(self) me = self;

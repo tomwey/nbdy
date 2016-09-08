@@ -71,6 +71,7 @@
 #define API_V1_AD_LIST                   @"/ad_tasks/nearby"
 #define API_V1_AD_VIEW                   @"/ad_tasks/view"
 #define API_V1_EARNS_INFO                @"/earnings/summary"
+#define API_V1_EARN_DETAIL               @"/earnings"
 
 #import "ParamsUtil.h"
 

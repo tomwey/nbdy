@@ -7,7 +7,7 @@
 //
 
 #import "UIImageView+ProgressIndicator.h"
-#import "UIImageView+AFNetworking.h"
+#import "UIImageView+AWProgress.h"
 #import "MACircleProgressIndicator.h"
 #import <objc/runtime.h>
 

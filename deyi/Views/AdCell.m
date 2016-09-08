@@ -41,7 +41,8 @@
 - (void)configData:(id)data
 {
     NSURL *imageURL = [NSURL URLWithString:[data valueForKey:@"cover_image"]];
-    [self.thumbView setImageWithURL:imageURL];
+//    [self.thumbView setImageWithURL:imageURL];
+    [self.thumbView setImageWithProgressIndicatorForURL:imageURL];
     
     // 标题
     self.titleLabel.text = [data valueForKey:@"title"];
@@ -63,10 +64,6 @@
 {
     [super layoutSubviews];
     
-    self.thumbView.frame = CGRectMake(0,
-                                      0,
-                                      [[self class] thumbViewSize].width,
-                                      [[self class] thumbViewSize].height);
     self.thumbView.position = CGPointMake(kLeftMargin, kLeftMargin);
     
     self.titleLabel.frame = CGRectMake(self.thumbView.left,
@@ -109,8 +106,12 @@
 {
     if ( !_thumbView ) {
         _thumbView = AWCreateImageView(nil);
+        self.thumbView.frame = CGRectMake(0,
+                                          0,
+                                          [[self class] thumbViewSize].width,
+                                          [[self class] thumbViewSize].height);
         [self.contentContainerView addSubview:_thumbView];
-        _thumbView.backgroundColor = HOME_HAIRLINE_COLOR;
+        _thumbView.backgroundColor = HOME_WIFI_CLOSE_COLOR;
     }
     return _thumbView;
 }

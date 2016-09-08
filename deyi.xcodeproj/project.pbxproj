@@ -32,6 +32,7 @@
 		97918FCB1D7FF48B00801780 /* ParamsUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FCA1D7FF48B00801780 /* ParamsUtil.m */; };
 		97918FDB1D80160700801780 /* MACircleProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FD81D80160700801780 /* MACircleProgressIndicator.m */; };
 		97918FDC1D80160700801780 /* UIImageView+ProgressIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FDA1D80160700801780 /* UIImageView+ProgressIndicator.m */; };
+		97918FDF1D80EF7A00801780 /* UIImageView+AWProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FDE1D80EF7A00801780 /* UIImageView+AWProgress.m */; };
 		97E303EE1D7904CC005C398A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303ED1D7904CC005C398A /* main.m */; };
 		97E303F11D7904CC005C398A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303F01D7904CC005C398A /* AppDelegate.m */; };
 		97E304211D7909E3005C398A /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E3041C1D7909E3005C398A /* Default-375w-667h@2x.png */; };
@@ -229,6 +230,9 @@
 		97918FD81D80160700801780 /* MACircleProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACircleProgressIndicator.m; sourceTree = "<group>"; };
 		97918FD91D80160700801780 /* UIImageView+ProgressIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ProgressIndicator.h"; sourceTree = "<group>"; };
 		97918FDA1D80160700801780 /* UIImageView+ProgressIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ProgressIndicator.m"; sourceTree = "<group>"; };
+		97918FDD1D80EF7A00801780 /* UIImageView+AWProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AWProgress.h"; sourceTree = "<group>"; };
+		97918FDE1D80EF7A00801780 /* UIImageView+AWProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AWProgress.m"; sourceTree = "<group>"; };
+		97918FE01D80F2BA00801780 /* AWUIImageViewProgressIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AWUIImageViewProgressIndicator.h; sourceTree = "<group>"; };
 		97E303E91D7904CC005C398A /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E303ED1D7904CC005C398A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97E303EF1D7904CC005C398A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -534,6 +538,9 @@
 				97918FD81D80160700801780 /* MACircleProgressIndicator.m */,
 				97918FD91D80160700801780 /* UIImageView+ProgressIndicator.h */,
 				97918FDA1D80160700801780 /* UIImageView+ProgressIndicator.m */,
+				97918FDD1D80EF7A00801780 /* UIImageView+AWProgress.h */,
+				97918FDE1D80EF7A00801780 /* UIImageView+AWProgress.m */,
+				97918FE01D80F2BA00801780 /* AWUIImageViewProgressIndicator.h */,
 			);
 			path = AWImageViewProgressIndicator;
 			sourceTree = "<group>";
@@ -1280,6 +1287,7 @@
 				97918F991D7E6F1400801780 /* EarnVC.m in Sources */,
 				97E3045C1D790C47005C398A /* AFNetworkActivityIndicatorManager.m in Sources */,
 				99BA411B1D7C14D600CD3C24 /* WithdrawVC.m in Sources */,
+				97918FDF1D80EF7A00801780 /* UIImageView+AWProgress.m in Sources */,
 				970FD7761D7CFF4A00F8EC15 /* AWLocationManager.m in Sources */,
 				97E3049B1D790C89005C398A /* APIManager.m in Sources */,
 				97E304521D790C47005C398A /* AFHTTPRequestOperationManager.m in Sources */,

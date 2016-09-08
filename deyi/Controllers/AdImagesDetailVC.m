@@ -144,7 +144,7 @@
     
     self.view.backgroundColor = MAIN_BLACK_COLOR;
     
-    [imageView setImageWithURL:[NSURL URLWithString:self.imageUrl]];
+    [imageView setImageWithProgressIndicatorForURL:[NSURL URLWithString:self.imageUrl]];
 }
 
 @end

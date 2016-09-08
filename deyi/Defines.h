@@ -35,6 +35,8 @@
 
 #import "AWButtonLoading.h"
 
+#import "AWUIImageViewProgressIndicator.h"
+
 #import "AFNetworking.h"
 #import "UIImageView+AFNetworking.h"
 

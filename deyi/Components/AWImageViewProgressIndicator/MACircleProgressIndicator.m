@@ -46,7 +46,6 @@
     UILabel* label = [[UILabel alloc] initWithFrame:self.bounds];
     label.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     [self addSubview:label];
-    [label release];
     
     label.textAlignment = NSTextAlignmentCenter;
     label.backgroundColor = [UIColor clearColor];

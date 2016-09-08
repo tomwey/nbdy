@@ -557,6 +557,30 @@
 			path = AWImageViewProgressIndicator;
 			sourceTree = "<group>";
 		};
+		97918FED1D813CF200801780 /* InviteTask */ = {
+			isa = PBXGroup;
+			children = (
+				97918F941D7E6F0A00801780 /* InviteVC.h */,
+				97918F951D7E6F0A00801780 /* InviteVC.m */,
+				97918FEA1D8139E100801780 /* QrcodeVC.h */,
+				97918FEB1D8139E100801780 /* QrcodeVC.m */,
+			);
+			name = InviteTask;
+			sourceTree = "<group>";
+		};
+		97918FEE1D813D0500801780 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				97E304B11D7916D8005C398A /* BaseVC.h */,
+				97E304B21D7916D8005C398A /* BaseVC.m */,
+				97E304B41D7916F3005C398A /* BaseNavBarVC.h */,
+				97E304B51D7916F3005C398A /* BaseNavBarVC.m */,
+				97918FA61D7EAC6F00801780 /* DataListVC.h */,
+				97918FA71D7EAC6F00801780 /* DataListVC.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
 		97E303E01D7904CC005C398A = {
 			isa = PBXGroup;
 			children = (
@@ -626,23 +650,17 @@
 		97E304041D7905EF005C398A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				97918FEE1D813D0500801780 /* Base */,
+				97918FED1D813CF200801780 /* InviteTask */,
 				97918FC11D7FEC4400801780 /* AdTask */,
 				97918FAF1D7EB5EF00801780 /* ShareTask */,
 				99BA40D81D7ACDA500CD3C24 /* User */,
-				97E304B11D7916D8005C398A /* BaseVC.h */,
-				97E304B21D7916D8005C398A /* BaseVC.m */,
-				97E304B41D7916F3005C398A /* BaseNavBarVC.h */,
-				97E304B51D7916F3005C398A /* BaseNavBarVC.m */,
-				97918FA61D7EAC6F00801780 /* DataListVC.h */,
-				97918FA71D7EAC6F00801780 /* DataListVC.m */,
 				97E304AE1D791668005C398A /* HomeVC.h */,
 				97E304AF1D791668005C398A /* HomeVC.m */,
 				97E3057E1D796870005C398A /* WebViewVC.h */,
 				97E3057F1D796870005C398A /* WebViewVC.m */,
 				97918F8B1D7E6ED600801780 /* ChannelListVC.h */,
 				97918F8C1D7E6ED600801780 /* ChannelListVC.m */,
-				97918F941D7E6F0A00801780 /* InviteVC.h */,
-				97918F951D7E6F0A00801780 /* InviteVC.m */,
 				97918F971D7E6F1400801780 /* EarnVC.h */,
 				97918F981D7E6F1400801780 /* EarnVC.m */,
 				97918F9A1D7E6F2700801780 /* ShopVC.h */,
@@ -651,8 +669,6 @@
 				97918F9E1D7E6F3200801780 /* RentVC.m */,
 				97918FA01D7E6F3C00801780 /* HelpVC.h */,
 				97918FA11D7E6F3C00801780 /* HelpVC.m */,
-				97918FEA1D8139E100801780 /* QrcodeVC.h */,
-				97918FEB1D8139E100801780 /* QrcodeVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

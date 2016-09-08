@@ -70,6 +70,7 @@
 #define API_V1_SHARE_LIST                @"/share_tasks/list"
 #define API_V1_AD_LIST                   @"/ad_tasks/nearby"
 #define API_V1_AD_VIEW                   @"/ad_tasks/view"
+#define API_V1_EARNS_INFO                @"/earnings/summary"
 
 #import "ParamsUtil.h"
 

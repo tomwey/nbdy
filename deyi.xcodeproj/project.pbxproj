@@ -36,6 +36,7 @@
 		97918FE31D8103E400801780 /* MessagePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FE21D8103E400801780 /* MessagePanel.m */; };
 		97918FE61D810B2200801780 /* SuccessMessagePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FE51D810B2200801780 /* SuccessMessagePanel.m */; };
 		97918FE91D810B3500801780 /* FailureMessagePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FE81D810B3500801780 /* FailureMessagePanel.m */; };
+		97918FEC1D8139E100801780 /* QrcodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FEB1D8139E100801780 /* QrcodeVC.m */; };
 		97E303EE1D7904CC005C398A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303ED1D7904CC005C398A /* main.m */; };
 		97E303F11D7904CC005C398A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303F01D7904CC005C398A /* AppDelegate.m */; };
 		97E304211D7909E3005C398A /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E3041C1D7909E3005C398A /* Default-375w-667h@2x.png */; };
@@ -242,6 +243,8 @@
 		97918FE51D810B2200801780 /* SuccessMessagePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuccessMessagePanel.m; sourceTree = "<group>"; };
 		97918FE71D810B3500801780 /* FailureMessagePanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailureMessagePanel.h; sourceTree = "<group>"; };
 		97918FE81D810B3500801780 /* FailureMessagePanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailureMessagePanel.m; sourceTree = "<group>"; };
+		97918FEA1D8139E100801780 /* QrcodeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QrcodeVC.h; sourceTree = "<group>"; };
+		97918FEB1D8139E100801780 /* QrcodeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QrcodeVC.m; sourceTree = "<group>"; };
 		97E303E91D7904CC005C398A /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E303ED1D7904CC005C398A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97E303EF1D7904CC005C398A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -648,6 +651,8 @@
 				97918F9E1D7E6F3200801780 /* RentVC.m */,
 				97918FA01D7E6F3C00801780 /* HelpVC.h */,
 				97918FA11D7E6F3C00801780 /* HelpVC.m */,
+				97918FEA1D8139E100801780 /* QrcodeVC.h */,
+				97918FEB1D8139E100801780 /* QrcodeVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1247,6 +1252,7 @@
 				97E304611D790C47005C398A /* UIProgressView+AFNetworking.m in Sources */,
 				97E304511D790C47005C398A /* AFHTTPRequestOperation.m in Sources */,
 				99BA40D41D7ACD6B00CD3C24 /* SignupVC.m in Sources */,
+				97918FEC1D8139E100801780 /* QrcodeVC.m in Sources */,
 				97918F8D1D7E6ED600801780 /* ChannelListVC.m in Sources */,
 				97918FC01D7FB7BB00801780 /* AdCell.m in Sources */,
 				97918FAB1D7EB58B00801780 /* FollowListVC.m in Sources */,

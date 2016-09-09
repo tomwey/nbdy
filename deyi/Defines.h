@@ -73,7 +73,13 @@
 #define API_V1_EARNS_INFO                @"/earnings/summary"
 #define API_V1_EARN_DETAIL               @"/earnings"
 
+#define DIANRU_APPKEY @"00005A3E28000062"
+
 #import "ParamsUtil.h"
+
+// 趣米sdk
+#import "DQUConfigTool.h"
+#import "LockPiano.h"
 
 // models
 #import "Module.h"

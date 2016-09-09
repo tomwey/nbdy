@@ -55,8 +55,15 @@
 //    [self deterNetworkType];
     
     NSLog(@"1234567 -> %.04f", 3.55);
+    
+    [self load3rdLib];
 
     return YES;
+}
+
+- (void)load3rdLib
+{
+    [DQUConfigTool startWithDQUAPPID:@"1438b7a2660cf5eb" qmsecretKey:@"55b8f7955b00db3e"];
 }
 
 //- (void)deterNetworkType

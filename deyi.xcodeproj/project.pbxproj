@@ -39,6 +39,18 @@
 		97918FEC1D8139E100801780 /* QrcodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FEB1D8139E100801780 /* QrcodeVC.m */; };
 		97918FF11D81635300801780 /* EarnDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FF01D81635300801780 /* EarnDetailVC.m */; };
 		97918FF41D81644400801780 /* EarnDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918FF31D81644400801780 /* EarnDetailCell.m */; };
+		9791901D1D8290D600801780 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9791901C1D8290D600801780 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9791901F1D8290E900801780 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9791901E1D8290E900801780 /* CoreTelephony.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		979190211D8292DE00801780 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 979190201D8292DE00801780 /* libz.1.2.5.tbd */; settings = {ATTRIBUTES = (Weak, ); }; };
+		979190231D8292E600801780 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979190221D8292E600801780 /* StoreKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		979190251D8292EF00801780 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979190241D8292EF00801780 /* Security.framework */; };
+		979190271D8292F600801780 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979190261D8292F600801780 /* SystemConfiguration.framework */; };
+		979190291D8292FC00801780 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979190281D8292FC00801780 /* CFNetwork.framework */; };
+		9791902F1D8298D900801780 /* KillSwitch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9791902C1D8298D900801780 /* KillSwitch.a */; };
+		9791903A1D8298FD00801780 /* libQumiAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979190341D8298FD00801780 /* libQumiAdSDK.a */; };
+		9791903B1D8298FD00801780 /* QmPartsource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 979190361D8298FD00801780 /* QmPartsource.bundle */; };
+		9791903D1D82996400801780 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9791903C1D82996400801780 /* CoreMotion.framework */; };
+		979190431D8299DB00801780 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 979190421D8299DB00801780 /* ImageIO.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		97E303EE1D7904CC005C398A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303ED1D7904CC005C398A /* main.m */; };
 		97E303F11D7904CC005C398A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E303F01D7904CC005C398A /* AppDelegate.m */; };
 		97E304211D7909E3005C398A /* Default-375w-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E3041C1D7909E3005C398A /* Default-375w-667h@2x.png */; };
@@ -251,6 +263,29 @@
 		97918FF01D81635300801780 /* EarnDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarnDetailVC.m; sourceTree = "<group>"; };
 		97918FF21D81644400801780 /* EarnDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarnDetailCell.h; sourceTree = "<group>"; };
 		97918FF31D81644400801780 /* EarnDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarnDetailCell.m; sourceTree = "<group>"; };
+		9791901C1D8290D600801780 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		9791901E1D8290E900801780 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		979190201D8292DE00801780 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		979190221D8292E600801780 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		979190241D8292EF00801780 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		979190261D8292F600801780 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		979190281D8292FC00801780 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		9791902C1D8298D900801780 /* KillSwitch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = KillSwitch.a; sourceTree = "<group>"; };
+		9791902D1D8298D900801780 /* LockPiano.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockPiano.h; sourceTree = "<group>"; };
+		9791902E1D8298D900801780 /* SleepForest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SleepForest.h; sourceTree = "<group>"; };
+		979190311D8298FD00801780 /* DQUConfigTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQUConfigTool.h; sourceTree = "<group>"; };
+		979190321D8298FD00801780 /* DQUHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQUHeader.h; sourceTree = "<group>"; };
+		979190331D8298FD00801780 /* DQUOperationApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DQUOperationApp.h; sourceTree = "<group>"; };
+		979190341D8298FD00801780 /* libQumiAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libQumiAdSDK.a; sourceTree = "<group>"; };
+		979190351D8298FD00801780 /* QMCustomTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMCustomTask.h; sourceTree = "<group>"; };
+		979190361D8298FD00801780 /* QmPartsource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = QmPartsource.bundle; sourceTree = "<group>"; };
+		979190371D8298FD00801780 /* QMTaskModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMTaskModel.h; sourceTree = "<group>"; };
+		979190381D8298FD00801780 /* QumiBannerAD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QumiBannerAD.h; sourceTree = "<group>"; };
+		979190391D8298FD00801780 /* QumiPartScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QumiPartScreen.h; sourceTree = "<group>"; };
+		9791903C1D82996400801780 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		9791903E1D82997F00801780 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		979190401D82998F00801780 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		979190421D8299DB00801780 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		97E303E91D7904CC005C398A /* deyi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deyi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97E303ED1D7904CC005C398A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97E303EF1D7904CC005C398A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -482,6 +517,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979190431D8299DB00801780 /* ImageIO.framework in Frameworks */,
+				9791903D1D82996400801780 /* CoreMotion.framework in Frameworks */,
+				9791903A1D8298FD00801780 /* libQumiAdSDK.a in Frameworks */,
+				979190291D8292FC00801780 /* CFNetwork.framework in Frameworks */,
+				979190271D8292F600801780 /* SystemConfiguration.framework in Frameworks */,
+				979190251D8292EF00801780 /* Security.framework in Frameworks */,
+				979190231D8292E600801780 /* StoreKit.framework in Frameworks */,
+				979190211D8292DE00801780 /* libz.1.2.5.tbd in Frameworks */,
+				9791902F1D8298D900801780 /* KillSwitch.a in Frameworks */,
+				9791901F1D8290E900801780 /* CoreTelephony.framework in Frameworks */,
+				9791901D1D8290D600801780 /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,10 +635,65 @@
 			name = Base;
 			sourceTree = "<group>";
 		};
+		97918FF51D828E2A00801780 /* 3rdLib */ = {
+			isa = PBXGroup;
+			children = (
+				979190301D8298FD00801780 /* lib1 */,
+				9791902B1D8298D900801780 /* lib2 */,
+			);
+			path = 3rdLib;
+			sourceTree = "<group>";
+		};
+		9791902A1D82951E00801780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				979190421D8299DB00801780 /* ImageIO.framework */,
+				979190401D82998F00801780 /* QuartzCore.framework */,
+				9791903E1D82997F00801780 /* CoreGraphics.framework */,
+				9791903C1D82996400801780 /* CoreMotion.framework */,
+				979190281D8292FC00801780 /* CFNetwork.framework */,
+				979190261D8292F600801780 /* SystemConfiguration.framework */,
+				979190241D8292EF00801780 /* Security.framework */,
+				979190221D8292E600801780 /* StoreKit.framework */,
+				979190201D8292DE00801780 /* libz.1.2.5.tbd */,
+				9791901E1D8290E900801780 /* CoreTelephony.framework */,
+				9791901C1D8290D600801780 /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			path = deyi;
+			sourceTree = "<group>";
+		};
+		9791902B1D8298D900801780 /* lib2 */ = {
+			isa = PBXGroup;
+			children = (
+				9791902C1D8298D900801780 /* KillSwitch.a */,
+				9791902D1D8298D900801780 /* LockPiano.h */,
+				9791902E1D8298D900801780 /* SleepForest.h */,
+			);
+			path = lib2;
+			sourceTree = "<group>";
+		};
+		979190301D8298FD00801780 /* lib1 */ = {
+			isa = PBXGroup;
+			children = (
+				979190311D8298FD00801780 /* DQUConfigTool.h */,
+				979190321D8298FD00801780 /* DQUHeader.h */,
+				979190331D8298FD00801780 /* DQUOperationApp.h */,
+				979190341D8298FD00801780 /* libQumiAdSDK.a */,
+				979190351D8298FD00801780 /* QMCustomTask.h */,
+				979190361D8298FD00801780 /* QmPartsource.bundle */,
+				979190371D8298FD00801780 /* QMTaskModel.h */,
+				979190381D8298FD00801780 /* QumiBannerAD.h */,
+				979190391D8298FD00801780 /* QumiPartScreen.h */,
+			);
+			path = lib1;
+			sourceTree = "<group>";
+		};
 		97E303E01D7904CC005C398A = {
 			isa = PBXGroup;
 			children = (
 				97E303EB1D7904CC005C398A /* deyi */,
+				9791902A1D82951E00801780 /* Frameworks */,
 				97E303EA1D7904CC005C398A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -608,6 +709,7 @@
 		97E303EB1D7904CC005C398A /* deyi */ = {
 			isa = PBXGroup;
 			children = (
+				97918FF51D828E2A00801780 /* 3rdLib */,
 				97E304261D790BF5005C398A /* External */,
 				97E304031D7905EF005C398A /* Components */,
 				97918FC81D7FF47200801780 /* Utils */,
@@ -1201,6 +1303,7 @@
 				97E305391D792CDC005C398A /* btn_back@3x.png in Resources */,
 				99BA41121D7BF56A00CD3C24 /* default_avatar@3x.png in Resources */,
 				97E305551D792CDC005C398A /* icon_home_share@2x.png in Resources */,
+				9791903B1D8298FD00801780 /* QmPartsource.bundle in Resources */,
 				97E3055C1D792CDC005C398A /* icon_home_wifi_indicator_open@3x.png in Resources */,
 				97E305541D792CDC005C398A /* icon_home_rent@3x.png in Resources */,
 				97E304221D7909E3005C398A /* Default-414w-736h@3x.png in Resources */,
@@ -1444,9 +1547,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = deyi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/deyi/3rdLib/lib2",
+					"$(PROJECT_DIR)/deyi/3rdLib/lib1",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.testd.deyi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1456,9 +1566,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = deyi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/deyi/3rdLib/lib2",
+					"$(PROJECT_DIR)/deyi/3rdLib/lib1",
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.testd.deyi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

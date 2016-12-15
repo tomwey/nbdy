@@ -178,7 +178,7 @@
          [self.loginButton finishLoading];
          
          if ( error ) {
-             
+             [self.contentView makeToast:error.domain];
          } else {
              UIViewController *vc =
              [[AWMediator sharedInstance] openVCWithName:@"HomeVC" params:nil];

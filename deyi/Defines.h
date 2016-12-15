@@ -77,6 +77,8 @@
 
 #import "ParamsUtil.h"
 
+#import "UIView+Toast.h"
+
 // 趣米sdk
 #import "DQUConfigTool.h"
 #import "LockPiano.h"

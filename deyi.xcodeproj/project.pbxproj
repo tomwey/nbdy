@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		970FD7761D7CFF4A00F8EC15 /* AWLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 970FD7751D7CFF4A00F8EC15 /* AWLocationManager.m */; };
+		971D9EB71E023FC80074DAE7 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D9EB61E023FC80074DAE7 /* UIView+Toast.m */; };
 		97918D8D1D7D146300801780 /* LocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918D8C1D7D146300801780 /* LocationView.m */; };
 		97918D901D7D178800801780 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918D8F1D7D178800801780 /* LocationService.m */; };
 		97918D931D7D57E400801780 /* LocationInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 97918D921D7D57E400801780 /* LocationInfo.m */; };
@@ -200,6 +201,8 @@
 /* Begin PBXFileReference section */
 		970FD7741D7CFF4A00F8EC15 /* AWLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWLocationManager.h; sourceTree = "<group>"; };
 		970FD7751D7CFF4A00F8EC15 /* AWLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWLocationManager.m; sourceTree = "<group>"; };
+		971D9EB51E023FC80074DAE7 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		971D9EB61E023FC80074DAE7 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
 		97918D8B1D7D146300801780 /* LocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationView.h; sourceTree = "<group>"; };
 		97918D8C1D7D146300801780 /* LocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationView.m; sourceTree = "<group>"; };
 		97918D8E1D7D178800801780 /* LocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
@@ -543,6 +546,15 @@
 			path = AWLocationManager;
 			sourceTree = "<group>";
 		};
+		971D9EB41E023FC80074DAE7 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				971D9EB51E023FC80074DAE7 /* UIView+Toast.h */,
+				971D9EB61E023FC80074DAE7 /* UIView+Toast.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
 		97918FAF1D7EB5EF00801780 /* ShareTask */ = {
 			isa = PBXGroup;
 			children = (
@@ -738,6 +750,7 @@
 		97E304031D7905EF005C398A /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				971D9EB41E023FC80074DAE7 /* Toast */,
 				97918FD61D8015FB00801780 /* AWImageViewProgressIndicator */,
 				99BA412B1D7DBD4700CD3C24 /* AWButtonLoading */,
 				970FD7731D7CFF3300F8EC15 /* AWLocationManager */,
@@ -1420,6 +1433,7 @@
 				97E304A81D790C89005C398A /* AWUIUtils.m in Sources */,
 				97E304971D790C89005C398A /* APIDictionaryReformer.m in Sources */,
 				97E305711D794E70005C398A /* Module.m in Sources */,
+				971D9EB71E023FC80074DAE7 /* UIView+Toast.m in Sources */,
 				97E304A71D790C89005C398A /* UITableViewCell+RemoveBackground.m in Sources */,
 				97E304A51D790C89005C398A /* UITableView+LoadNetworkData.m in Sources */,
 				97E3056E1D794B1C005C398A /* AWHairlineView.m in Sources */,
